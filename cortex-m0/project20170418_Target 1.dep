@@ -1,0 +1,75 @@
+Dependencies for Project 'project20170418', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_NUC1xx.s)(0x53C4CC90)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --16 --apcs=interwork -I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"--list .\startup_nuc1xx.lst --xref -o .\startup_nuc1xx.o --depend .\startup_nuc1xx.d)
+F (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.c)(0x4F619694)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\core_cm0.o --omf_browse .\core_cm0.crf --depend .\core_cm0.d)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+F (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.c)(0x4F619694)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\system_nuc1xx.o --omf_browse .\system_nuc1xx.crf --depend .\system_nuc1xx.d)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+F (.\20170418.c)(0x5923F6AB)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\20170418.o --omf_browse .\20170418.crf --depend .\20170418.d)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdio.h)(0x51C7C554)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdlib.h)(0x51C7C554)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\string.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvGPIO.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSYS.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSPI.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvADC.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvTIMER.h)(0x4F6196CA)
+I (AD9850FUNC0903.c)(0x59221803)
+I (LCDFUNC0723.c)(0x56E8EBEE)
+I (UIFUNC0728.c)(0x5923F73B)
+F (..\..\Src\Driver\DrvADC.c)(0x4F6196E4)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\drvadc.o --omf_browse .\drvadc.crf --depend .\drvadc.d)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvADC.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSYS.h)(0x4F6196CA)
+F (..\..\Src\Driver\DrvGPIO.c)(0x4F6196E4)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\drvgpio.o --omf_browse .\drvgpio.crf --depend .\drvgpio.d)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdio.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvGPIO.h)(0x4F6196CA)
+F (..\..\Src\Driver\DrvSPI.c)(0x4F6196E4)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\drvspi.o --omf_browse .\drvspi.crf --depend .\drvspi.d)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSPI.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSYS.h)(0x4F6196CA)
+F (..\..\Src\Driver\DrvSYS.c)(0x4F6196E4)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\drvsys.o --omf_browse .\drvsys.crf --depend .\drvsys.d)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdio.h)(0x51C7C554)
+I (..\..\Include\Driver\DrvSYS.h)(0x4F6196CA)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+F (..\..\Src\Driver\DrvTIMER.c)(0x4F6196E4)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork --split_sections -I..\ -I..\..\Include\Driver -I..\..\Include -I..\..\Include\NUC1xx-LB_002 -I..\..\..\CMSIS\CM0\CoreSupport -I..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx-I "C:\Software\keil uvision4.74\ARM\RV31\INC"-I "C:\Software\keil uvision4.74\ARM\CMSIS\Include"-o .\drvtimer.o --omf_browse .\drvtimer.crf --depend .\drvtimer.d)
+I (..\..\Include\Driver\DrvTIMER.h)(0x4F6196CA)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\NUC1xx.h)(0x4F619694)
+I (..\..\..\CMSIS\CM0\CoreSupport\core_cm0.h)(0x4F619694)
+I (C:\Software\keil uvision4.74\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.h)(0x4F619694)
+I (..\..\Include\System\SysInfra.h)(0x4F6196CA)
+I (..\..\Include\System\ModuleID.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvSYS.h)(0x4F6196CA)
+I (..\..\Include\Driver\DrvGPIO.h)(0x4F6196CA)

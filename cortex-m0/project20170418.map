@@ -1,0 +1,1795 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Small function inlining results
+
+Inlined function __aeabi_idiv0 from aeabi_idiv0.o at offset 0x154 in aeabi_sdiv.o(.text).
+Inlined Instruction: BX       lr
+Inlined function __aeabi_idiv0 from aeabi_idiv0.o at offset 0x154 in aeabi_sdiv_div0.o(.text).
+Inlined Instruction: BX       lr
+Inlined function _platform_pre_stackheap_init from boardinit1.o at offset 0x0 in rtentry2.o(.ARM.Collect$$rtentry$$00000001).
+Inlined Instruction: BX       lr
+Inlined function _fp_init from fpinit.o at offset 0x0 in libinit2.o(.ARM.Collect$$libinit$$00000001).
+Inlined Instruction: BX       lr
+Inlined function _platform_pre_lib_shutdown from boardshut.o at offset 0x0 in rtexit2.o(.ARM.Collect$$rtexit$$00000001).
+Inlined Instruction: BX       lr
+Inlined function __ARM_get_argv from no_argv.o at offset 0x2 in argv_veneer.o(.text).
+Inlined Instruction: BX       lr
+Inlined total of 6 calls.
+
+==============================================================================
+
+Section Cross References
+
+    startup_nuc1xx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc1xx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc1xx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc1xx.o(RESET) refers to startup_nuc1xx.o(STACK) for __initial_sp
+    startup_nuc1xx.o(RESET) refers to startup_nuc1xx.o(.text) for Reset_Handler
+    startup_nuc1xx.o(RESET) refers to drvsys.o(i.BOD_IRQHandler) for BOD_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvtimer.o(i.WDT_IRQHandler) for WDT_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvgpio.o(i.EINT0_IRQHandler) for EINT0_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvgpio.o(i.EINT1_IRQHandler) for EINT1_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvgpio.o(i.GPAB_IRQHandler) for GPAB_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvgpio.o(i.GPCDE_IRQHandler) for GPCDE_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvtimer.o(i.TMR0_IRQHandler) for TMR0_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvtimer.o(i.TMR1_IRQHandler) for TMR1_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvtimer.o(i.TMR2_IRQHandler) for TMR2_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvtimer.o(i.TMR3_IRQHandler) for TMR3_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvspi.o(i.SPI0_IRQHandler) for SPI0_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvspi.o(i.SPI1_IRQHandler) for SPI1_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvspi.o(i.SPI2_IRQHandler) for SPI2_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvspi.o(i.SPI3_IRQHandler) for SPI3_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvsys.o(i.PWRWU_IRQHandler) for PWRWU_IRQHandler
+    startup_nuc1xx.o(RESET) refers to drvadc.o(i.ADC_IRQHandler) for ADC_IRQHandler
+    startup_nuc1xx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc1xx.o(.text) refers to system_nuc1xx.o(i.SystemInit) for SystemInit
+    startup_nuc1xx.o(.text) refers to __main.o(!!!main) for __main
+    startup_nuc1xx.o(.text) refers to startup_nuc1xx.o(HEAP) for Heap_Mem
+    startup_nuc1xx.o(.text) refers to startup_nuc1xx.o(STACK) for Stack_Mem
+    system_nuc1xx.o(i.SystemCoreClockUpdate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    system_nuc1xx.o(i.SystemCoreClockUpdate) refers to system_nuc1xx.o(.data) for gau32ClkSrcTbl
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_SetADCOperationMode) for DrvADC_SetADCOperationMode
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_SetADCInputMode) for DrvADC_SetADCInputMode
+    20170418.o(i.AdcContScanModeTest) refers to 20170418.o(i.SingleEndInput_ScanOpModeChannelSelect) for SingleEndInput_ScanOpModeChannelSelect
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_SetADCChannel) for DrvADC_SetADCChannel
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_StartConvert) for DrvADC_StartConvert
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_IsConversionDone) for DrvADC_IsConversionDone
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_GetConversionData) for DrvADC_GetConversionData
+    20170418.o(i.AdcContScanModeTest) refers to drvadc.o(i.DrvADC_StopConvert) for DrvADC_StopConvert
+    20170418.o(i.AdcContScanModeTest) refers to 20170418.o(.data) for tmp_adc
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_SetADCOperationMode) for DrvADC_SetADCOperationMode
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_SetADCInputMode) for DrvADC_SetADCInputMode
+    20170418.o(i.AdcSingleCycleModeTest) refers to 20170418.o(i.SingleEndInput_ScanOpModeChannelSelect) for SingleEndInput_ScanOpModeChannelSelect
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_SetADCChannel) for DrvADC_SetADCChannel
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_StartConvert) for DrvADC_StartConvert
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_IsConversionDone) for DrvADC_IsConversionDone
+    20170418.o(i.AdcSingleCycleModeTest) refers to drvadc.o(i.DrvADC_GetConversionData) for DrvADC_GetConversionData
+    20170418.o(i.AdcSingleCycleModeTest) refers to 20170418.o(.data) for adc_A
+    20170418.o(i.DECREASE_detect) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.DECREASE_detect) refers to 20170418.o(.data) for key_DECREASE_state
+    20170418.o(i.DOWN_detect) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.DOWN_detect) refers to 20170418.o(.data) for key_DOWN_state
+    20170418.o(i.ENTER_detect) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.ENTER_detect) refers to 20170418.o(.data) for key_ENTER_state
+    20170418.o(i.INCREASE_detect) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.INCREASE_detect) refers to 20170418.o(.data) for key_INCREASE_state
+    20170418.o(i.Init_Devices) refers to drvsys.o(i.DrvSYS_SetOscCtrl) for DrvSYS_SetOscCtrl
+    20170418.o(i.Init_Devices) refers to drvsys.o(i.DrvSYS_SelectHCLKSource) for DrvSYS_SelectHCLKSource
+    20170418.o(i.Init_Devices) refers to drvsys.o(i.DrvSYS_SetClockDivider) for DrvSYS_SetClockDivider
+    20170418.o(i.Init_Devices) refers to drvadc.o(i.DrvADC_Open) for DrvADC_Open
+    20170418.o(i.Init_Devices) refers to 20170418.o(i.Port_Init) for Port_Init
+    20170418.o(i.Init_Devices) refers to 20170418.o(i.Timer0_Init) for Timer0_Init
+    20170418.o(i.Init_Devices) refers to drvtimer.o(i.DrvTIMER_Start) for DrvTIMER_Start
+    20170418.o(i.Initial_lcd) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.Initial_lcd) refers to 20170418.o(i.SysTimerDelay) for SysTimerDelay
+    20170418.o(i.Initial_lcd) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.Initial_lcd) refers to 20170418.o(i.transfer_command_lcd) for transfer_command_lcd
+    20170418.o(i.Initial_lcd) refers to 20170418.o(.data) for SPI_PORT
+    20170418.o(i.LCD_Port_Init) refers to drvgpio.o(i.DrvGPIO_Open) for DrvGPIO_Open
+    20170418.o(i.Port_Init) refers to 20170418.o(i.LCD_Port_Init) for LCD_Port_Init
+    20170418.o(i.Port_Init) refers to 20170418.o(i.button_Port_Init) for button_Port_Init
+    20170418.o(i.Port_Init) refers to drvgpio.o(i.DrvGPIO_Open) for DrvGPIO_Open
+    20170418.o(i.SingleEndInput_ScanOpModeChannelSelect) refers to drvgpio.o(i.DrvGPIO_DisableDigitalInputBit) for DrvGPIO_DisableDigitalInputBit
+    20170418.o(i.SingleEndInput_ScanOpModeChannelSelect) refers to drvgpio.o(i.DrvGPIO_InitFunction) for DrvGPIO_InitFunction
+    20170418.o(i.Timer0_Callback) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(i.ENTER_detect) for ENTER_detect
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(i.DOWN_detect) for DOWN_detect
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(i.UP_detect) for UP_detect
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(i.INCREASE_detect) for INCREASE_detect
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(i.DECREASE_detect) for DECREASE_detect
+    20170418.o(i.Timer0_Callback) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.Timer0_Callback) refers to 20170418.o(.data) for clock1s
+    20170418.o(i.Timer0_Init) refers to drvtimer.o(i.DrvTIMER_Init) for DrvTIMER_Init
+    20170418.o(i.Timer0_Init) refers to drvtimer.o(i.DrvTIMER_Open) for DrvTIMER_Open
+    20170418.o(i.Timer0_Init) refers to drvtimer.o(i.DrvTIMER_SetTimerEvent) for DrvTIMER_SetTimerEvent
+    20170418.o(i.Timer0_Init) refers to 20170418.o(i.Timer0_Callback) for Timer0_Callback
+    20170418.o(i.UP_detect) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.UP_detect) refers to 20170418.o(.data) for key_UP_state
+    20170418.o(i.ad9850_Port_Init) refers to drvgpio.o(i.DrvGPIO_Open) for DrvGPIO_Open
+    20170418.o(i.ad9850_reset) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.ad9850_reset) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.ad9850_wr_parrel) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.ad9850_wr_parrel) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.button_Port_Init) refers to drvgpio.o(i.DrvGPIO_Open) for DrvGPIO_Open
+    20170418.o(i.clear_screen) refers to 20170418.o(i.transfer_command_lcd) for transfer_command_lcd
+    20170418.o(i.clear_screen) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.display_128x64) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.display_128x64) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.display_GB2312_string) refers to 20170418.o(i.get_and_write_16x16) for get_and_write_16x16
+    20170418.o(i.display_GB2312_string) refers to 20170418.o(i.get_and_write_8x16) for get_and_write_8x16
+    20170418.o(i.display_GB2312_string) refers to 20170418.o(.data) for fontaddr
+    20170418.o(i.display_graphic_16x16) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.display_graphic_16x16) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.display_graphic_5x8) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.display_graphic_5x8) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.display_graphic_8x16) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.display_graphic_8x16) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.display_ui_act) refers to 20170418.o(i.clear_screen) for clear_screen
+    20170418.o(i.display_ui_act) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.display_ui_act) refers to 20170418.o(.bss) for act
+    20170418.o(i.get_and_write_16x16) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.get_and_write_16x16) refers to 20170418.o(i.send_command_to_ROM) for send_command_to_ROM
+    20170418.o(i.get_and_write_16x16) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.get_and_write_16x16) refers to 20170418.o(i.get_data_from_ROM) for get_data_from_ROM
+    20170418.o(i.get_and_write_16x16) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.get_and_write_16x16) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.get_and_write_8x16) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.get_and_write_8x16) refers to 20170418.o(i.send_command_to_ROM) for send_command_to_ROM
+    20170418.o(i.get_and_write_8x16) refers to 20170418.o(i.lcd_address) for lcd_address
+    20170418.o(i.get_and_write_8x16) refers to 20170418.o(i.get_data_from_ROM) for get_data_from_ROM
+    20170418.o(i.get_and_write_8x16) refers to 20170418.o(i.transfer_data_lcd) for transfer_data_lcd
+    20170418.o(i.get_and_write_8x16) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.get_data_from_ROM) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.get_data_from_ROM) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.get_data_from_ROM) refers to drvgpio.o(i.DrvGPIO_GetBit) for DrvGPIO_GetBit
+    20170418.o(i.in_de_degree) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    20170418.o(i.in_de_degree) refers to 20170418.o(.data) for stringdegree_00
+    20170418.o(i.in_de_degree) refers to 20170418.o(.bss) for act
+    20170418.o(i.init_act) refers to 20170418.o(i.itoafreq) for itoafreq
+    20170418.o(i.init_act) refers to 20170418.o(i.itodegree) for itodegree
+    20170418.o(i.init_act) refers to 20170418.o(.data) for a2_s5
+    20170418.o(i.init_act) refers to 20170418.o(.bss) for a0
+    20170418.o(i.init_act) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.itoa) refers to aeabi_sdiv.o(.text) for __aeabi_idivmod
+    20170418.o(i.itoafreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.itodegree) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    20170418.o(i.itodegree) refers to 20170418.o(.data) for stringdegree_00
+    20170418.o(i.lcd_address) refers to 20170418.o(i.transfer_command_lcd) for transfer_command_lcd
+    20170418.o(i.main) refers to 20170418.o(i.Init_Devices) for Init_Devices
+    20170418.o(i.main) refers to drvsys.o(i.DrvSYS_Delay) for DrvSYS_Delay
+    20170418.o(i.main) refers to 20170418.o(i.Initial_lcd) for Initial_lcd
+    20170418.o(i.main) refers to 20170418.o(i.init_act) for init_act
+    20170418.o(i.main) refers to 20170418.o(i.ad9850_Port_Init) for ad9850_Port_Init
+    20170418.o(i.main) refers to 20170418.o(i.ad9850_reset) for ad9850_reset
+    20170418.o(i.main) refers to drvtimer.o(i.DrvTIMER_EnableInt) for DrvTIMER_EnableInt
+    20170418.o(i.main) refers to 20170418.o(i.setup_AD9850) for setup_AD9850
+    20170418.o(i.main) refers to 20170418.o(i.AdcContScanModeTest) for AdcContScanModeTest
+    20170418.o(i.main) refers to 20170418.o(i.ui_state_proc) for ui_state_proc
+    20170418.o(i.main) refers to 20170418.o(i.AdcSingleCycleModeTest) for AdcSingleCycleModeTest
+    20170418.o(i.main) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.main) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.main) refers to 20170418.o(.data) for times10s
+    20170418.o(i.send_command_to_ROM) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.send_command_to_ROM) refers to 20170418.o(i.SysTimerDelay) for SysTimerDelay
+    20170418.o(i.send_command_to_ROM) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.setup_AD9850) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.setup_AD9850) refers to 20170418.o(i.ad9850_wr_parrel) for ad9850_wr_parrel
+    20170418.o(i.setup_AD9850) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.setup_AD9850) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.setup_AD9850) refers to 20170418.o(.data) for dds_fq
+    20170418.o(i.transfer_command_lcd) refers to drvgpio.o(i.DrvGPIO_ClrBit) for DrvGPIO_ClrBit
+    20170418.o(i.transfer_command_lcd) refers to 20170418.o(.data) for SPI_PORT
+    20170418.o(i.transfer_data_lcd) refers to drvgpio.o(i.DrvGPIO_SetBit) for DrvGPIO_SetBit
+    20170418.o(i.transfer_data_lcd) refers to 20170418.o(.data) for SPI_PORT
+    20170418.o(i.ui_proc0) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc0) refers to 20170418.o(.data) for key_ENTER_flag
+    20170418.o(i.ui_proc0) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc101) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc101) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc101) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc101) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc102) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc102) refers to 20170418.o(i.itodegree) for itodegree
+    20170418.o(i.ui_proc102) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc102) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc102) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc103) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc103) refers to aeabi_sdiv.o(.text) for __aeabi_idivmod
+    20170418.o(i.ui_proc103) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc103) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc103) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc201) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc201) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc201) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc201) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc203) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc203) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc203) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc203) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc203) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc204) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc204) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc204) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc204) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc204) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc205) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc205) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc205) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc205) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc205) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc206) refers to 20170418.o(i.itoafreq) for itoafreq
+    20170418.o(i.ui_proc206) refers to 20170418.o(i.setup_AD9850) for setup_AD9850
+    20170418.o(i.ui_proc206) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc206) refers to 20170418.o(.data) for a2_s5
+    20170418.o(i.ui_proc206) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc207) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc207) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc207) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc208) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc208) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc208) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc208) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc208) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc209) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc209) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc209) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc209) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc209) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc210) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc210) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc210) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc210) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc210) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc404) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc404) refers to 20170418.o(i.atoifreq) for atoifreq
+    20170418.o(i.ui_proc404) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc404) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc404) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc405) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc405) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc405) refers to 20170418.o(i.itoafreq) for itoafreq
+    20170418.o(i.ui_proc405) refers to 20170418.o(i.itodegree) for itodegree
+    20170418.o(i.ui_proc405) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc405) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc406) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc406) refers to 20170418.o(i.in_de) for in_de
+    20170418.o(i.ui_proc406) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc406) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc406) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc407) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc407) refers to 20170418.o(i.in_de) for in_de
+    20170418.o(i.ui_proc407) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc407) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc407) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc408) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc408) refers to 20170418.o(i.in_de) for in_de
+    20170418.o(i.ui_proc408) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc408) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc408) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc409) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc409) refers to 20170418.o(i.in_de_degree) for in_de_degree
+    20170418.o(i.ui_proc409) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc409) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc505) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc505) refers to 20170418.o(.data) for key_ENTER_flag
+    20170418.o(i.ui_proc505) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc701) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc701) refers to 20170418.o(i.display_ui_act) for display_ui_act
+    20170418.o(i.ui_proc701) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc701) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc703) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc703) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc703) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc703) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc703) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc704) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc704) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc704) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc704) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc704) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc705) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc705) refers to 20170418.o(i.in_de_f) for in_de_f
+    20170418.o(i.ui_proc705) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    20170418.o(i.ui_proc705) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc705) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc706) refers to 20170418.o(i.itoafreq) for itoafreq
+    20170418.o(i.ui_proc706) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc706) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_proc706) refers to 20170418.o(.data) for a7_s5
+    20170418.o(i.ui_proc707) refers to 20170418.o(i.display_GB2312_string) for display_GB2312_string
+    20170418.o(i.ui_proc707) refers to 20170418.o(.data) for key_UP_flag
+    20170418.o(i.ui_proc707) refers to 20170418.o(.bss) for act
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc0) for ui_proc0
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc101) for ui_proc101
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc102) for ui_proc102
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc103) for ui_proc103
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc201) for ui_proc201
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc203) for ui_proc203
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc204) for ui_proc204
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc205) for ui_proc205
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc206) for ui_proc206
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc207) for ui_proc207
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc208) for ui_proc208
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc209) for ui_proc209
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc210) for ui_proc210
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc404) for ui_proc404
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc405) for ui_proc405
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc406) for ui_proc406
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc407) for ui_proc407
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc408) for ui_proc408
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc409) for ui_proc409
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc505) for ui_proc505
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc701) for ui_proc701
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc703) for ui_proc703
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc704) for ui_proc704
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc705) for ui_proc705
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc706) for ui_proc706
+    20170418.o(i.ui_state_proc) refers to 20170418.o(i.ui_proc707) for ui_proc707
+    drvadc.o(i.ADC_IRQHandler) refers to drvadc.o(.data) for g_ptADCCallBack
+    drvadc.o(i.ADC_IRQHandler) refers to drvadc.o(.bss) for g_pu32UserData
+    drvadc.o(i.DrvADC_EnableADCCmp0Int) refers to drvadc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvadc.o(i.DrvADC_EnableADCCmp0Int) refers to drvadc.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvadc.o(i.DrvADC_EnableADCCmp0Int) refers to drvadc.o(.data) for g_ptADCMP0CallBack
+    drvadc.o(i.DrvADC_EnableADCCmp0Int) refers to drvadc.o(.bss) for g_pu32UserData
+    drvadc.o(i.DrvADC_EnableADCCmp1Int) refers to drvadc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvadc.o(i.DrvADC_EnableADCCmp1Int) refers to drvadc.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvadc.o(i.DrvADC_EnableADCCmp1Int) refers to drvadc.o(.data) for g_ptADCMP1CallBack
+    drvadc.o(i.DrvADC_EnableADCCmp1Int) refers to drvadc.o(.bss) for g_pu32UserData
+    drvadc.o(i.DrvADC_EnableADCInt) refers to drvadc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvadc.o(i.DrvADC_EnableADCInt) refers to drvadc.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvadc.o(i.DrvADC_EnableADCInt) refers to drvadc.o(.data) for g_ptADCCallBack
+    drvadc.o(i.DrvADC_EnableADCInt) refers to drvadc.o(.bss) for g_pu32UserData
+    drvadc.o(i.DrvADC_GetConversionRate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvadc.o(i.DrvADC_GetConversionRate) refers to drvsys.o(i.DrvSYS_GetPLLClockFreq) for DrvSYS_GetPLLClockFreq
+    drvadc.o(i.DrvADC_GetConversionRate) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvgpio.o(i.DrvGPIO_ClrPortMask) refers to drvgpio.o(i.DrvGPIO_GetPortMask) for DrvGPIO_GetPortMask
+    drvgpio.o(i.DrvGPIO_DisableEINT0) refers to drvgpio.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvgpio.o(i.DrvGPIO_DisableEINT1) refers to drvgpio.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvgpio.o(i.DrvGPIO_DisableInt) refers to drvgpio.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvgpio.o(i.DrvGPIO_EnableEINT0) refers to drvgpio.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvgpio.o(i.DrvGPIO_EnableEINT0) refers to drvgpio.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvgpio.o(i.DrvGPIO_EnableEINT0) refers to drvgpio.o(.data) for _pfEINT0Callback
+    drvgpio.o(i.DrvGPIO_EnableEINT1) refers to drvgpio.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvgpio.o(i.DrvGPIO_EnableEINT1) refers to drvgpio.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvgpio.o(i.DrvGPIO_EnableEINT1) refers to drvgpio.o(.data) for _pfEINT1Callback
+    drvgpio.o(i.DrvGPIO_EnableInt) refers to drvgpio.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvgpio.o(i.DrvGPIO_EnableInt) refers to drvgpio.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvgpio.o(i.DrvGPIO_InitFunction) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    drvgpio.o(i.DrvGPIO_SetIntCallback) refers to drvgpio.o(.data) for _pfGPABCallback
+    drvgpio.o(i.DrvGPIO_SetPortMask) refers to drvgpio.o(i.DrvGPIO_GetPortMask) for DrvGPIO_GetPortMask
+    drvgpio.o(i.EINT0_IRQHandler) refers to drvgpio.o(.data) for _pfEINT0Callback
+    drvgpio.o(i.EINT1_IRQHandler) refers to drvgpio.o(.data) for _pfEINT1Callback
+    drvgpio.o(i.GPAB_IRQHandler) refers to drvgpio.o(.data) for _pfGPABCallback
+    drvgpio.o(i.GPCDE_IRQHandler) refers to drvgpio.o(.data) for _pfGPCDECallback
+    drvspi.o(i.DrvSPI_3WireAbort) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_BurstRead) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_BurstTransfer) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_BurstWrite) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Close) refers to drvspi.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvspi.o(i.DrvSPI_Close) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_Close) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Clr3WireStartIntFlag) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_ClrGo) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_ClrIntFlag) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_ClrSS) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Disable3Wire) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Disable3WireStartInt) refers to drvspi.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvspi.o(i.DrvSPI_Disable3WireStartInt) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_Disable3WireStartInt) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_DisableAutoSS) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_DisableDivOne) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_DisableInt) refers to drvspi.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvspi.o(i.DrvSPI_DisableInt) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_DisableInt) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_DumpRxRegister) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Enable3Wire) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Enable3WireStartInt) refers to drvspi.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvspi.o(i.DrvSPI_Enable3WireStartInt) refers to drvspi.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvspi.o(i.DrvSPI_Enable3WireStartInt) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_Enable3WireStartInt) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_EnableAutoSS) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_EnableDivOne) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_EnableInt) refers to drvspi.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvspi.o(i.DrvSPI_EnableInt) refers to drvspi.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvspi.o(i.DrvSPI_EnableInt) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_EnableInt) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Get3WireStartIntFlag) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_GetClock1Freq) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvspi.o(i.DrvSPI_GetClock1Freq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvspi.o(i.DrvSPI_GetClock1Freq) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_GetClock2Freq) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvspi.o(i.DrvSPI_GetClock2Freq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvspi.o(i.DrvSPI_GetClock2Freq) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_GetIntFlag) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_GetLevelTriggerStatus) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_IsBusy) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Open) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.DrvSPI_Open) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_Set2BitTransferMode) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetBitLength) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetByteReorder) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetClockFreq) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvspi.o(i.DrvSPI_SetClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvspi.o(i.DrvSPI_SetClockFreq) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetEndian) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetGo) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetPDMA) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetSS) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetSlaveSelectActiveLevel) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetSuspendCycle) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetTriggerMode) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetTxRegister) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SetVariableClockFunction) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SingleRead) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.DrvSPI_SingleWrite) refers to drvspi.o(.data) for SPI_PORT
+    drvspi.o(i.SPI0_IRQHandler) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.SPI1_IRQHandler) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.SPI2_IRQHandler) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvspi.o(i.SPI3_IRQHandler) refers to drvspi.o(.bss) for g_sSpiHandler
+    drvsys.o(i.BOD_IRQHandler) refers to drvsys.o(.data) for BOD_callbackFn
+    drvsys.o(i.DrvSYS_Delay) refers to system_nuc1xx.o(.data) for CyclesPerUs
+    drvsys.o(i.DrvSYS_GetChipClockSourceStatus) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    drvsys.o(i.DrvSYS_GetHCLKFreq) refers to drvsys.o(i.DrvSYS_GetPLLClockFreq) for DrvSYS_GetPLLClockFreq
+    drvsys.o(i.DrvSYS_GetHCLKFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvsys.o(i.DrvSYS_GetPLLClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvsys.o(i.DrvSYS_GetPLLClockFreq) refers to drvsys.o(.constdata) for .constdata
+    drvsys.o(i.DrvSYS_GetPLLContent) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvsys.o(i.DrvSYS_Open) refers to drvsys.o(i.DrvSYS_IsProtectedRegLocked) for DrvSYS_IsProtectedRegLocked
+    drvsys.o(i.DrvSYS_Open) refers to drvsys.o(i.DrvSYS_GetPLLContent) for DrvSYS_GetPLLContent
+    drvsys.o(i.DrvSYS_Open) refers to drvsys.o(i.DrvSYS_SetPLLContent) for DrvSYS_SetPLLContent
+    drvsys.o(i.DrvSYS_Open) refers to drvsys.o(i.DrvSYS_SelectHCLKSource) for DrvSYS_SelectHCLKSource
+    drvsys.o(i.DrvSYS_SelectHCLKSource) refers to system_nuc1xx.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    drvsys.o(i.DrvSYS_SelectIPClockSource) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    drvsys.o(i.DrvSYS_SetBODFunction) refers to drvsys.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvsys.o(i.DrvSYS_SetBODFunction) refers to drvsys.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvsys.o(i.DrvSYS_SetBODFunction) refers to drvsys.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvsys.o(i.DrvSYS_SetBODFunction) refers to drvsys.o(.data) for BOD_callbackFn
+    drvsys.o(i.DrvSYS_SetClockDivider) refers to system_nuc1xx.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    drvsys.o(i.DrvSYS_SetFreqDividerOutput) refers to drvsys.o(i.DrvSYS_SetIPClock) for DrvSYS_SetIPClock
+    drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt) refers to drvsys.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt) refers to drvsys.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt) refers to drvsys.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt) refers to drvsys.o(.data) for PWRWU_callbackFn
+    drvsys.o(i.PWRWU_IRQHandler) refers to drvsys.o(.data) for PWRWU_callbackFn
+    drvtimer.o(i.CalTimerInitValue) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    drvtimer.o(i.DrvTIMER_ClearCaptureIntFlag) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_ClearTimerEvent) refers to drvtimer.o(.bss) for tTime0Event
+    drvtimer.o(i.DrvTIMER_ClearTimerEvent) refers to drvtimer.o(.data) for uTime0EventCount
+    drvtimer.o(i.DrvTIMER_Close) refers to drvtimer.o(i.DrvTIMER_DisableInt) for DrvTIMER_DisableInt
+    drvtimer.o(i.DrvTIMER_Close) refers to drvtimer.o(.data) for bIsTimer0Used
+    drvtimer.o(i.DrvTIMER_CloseCapture) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_Delay) refers to drvtimer.o(i.DrvTIMER_GetIntTicks) for DrvTIMER_GetIntTicks
+    drvtimer.o(i.DrvTIMER_DisableCapture) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_DisableCaptureDebounce) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_DisableCaptureInt) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_DisableCounterDebounce) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_DisableInt) refers to drvtimer.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvtimer.o(i.DrvTIMER_DisableInt) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_EnableCapture) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_EnableCaptureDebounce) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_EnableCaptureInt) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_EnableCounterDebounce) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_EnableInt) refers to drvtimer.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvtimer.o(i.DrvTIMER_EnableInt) refers to drvtimer.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvtimer.o(i.DrvTIMER_EnableInt) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_GetCaptureData) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_GetCaptureIntFlag) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_GetCounters) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_GetIntTicks) refers to drvtimer.o(.data) for uTimer0Tick
+    drvtimer.o(i.DrvTIMER_Init) refers to drvtimer.o(.data) for bIsTimer0Initial
+    drvtimer.o(i.DrvTIMER_Open) refers to drvtimer.o(i.GetTimerClock) for GetTimerClock
+    drvtimer.o(i.DrvTIMER_Open) refers to drvtimer.o(i.CalTimerInitValue) for CalTimerInitValue
+    drvtimer.o(i.DrvTIMER_Open) refers to drvgpio.o(i.DrvGPIO_InitFunction) for DrvGPIO_InitFunction
+    drvtimer.o(i.DrvTIMER_Open) refers to drvtimer.o(.data) for bIsTimer0Initial
+    drvtimer.o(i.DrvTIMER_Open) refers to drvtimer.o(.bss) for tTime0Event
+    drvtimer.o(i.DrvTIMER_OpenCapture) refers to drvsys.o(i.DrvSYS_SelectIPClockSource) for DrvSYS_SelectIPClockSource
+    drvtimer.o(i.DrvTIMER_OpenCapture) refers to drvgpio.o(i.DrvGPIO_InitFunction) for DrvGPIO_InitFunction
+    drvtimer.o(i.DrvTIMER_OpenCapture) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_OpenCounter) refers to drvsys.o(i.DrvSYS_SelectIPClockSource) for DrvSYS_SelectIPClockSource
+    drvtimer.o(i.DrvTIMER_OpenCounter) refers to drvgpio.o(i.DrvGPIO_InitFunction) for DrvGPIO_InitFunction
+    drvtimer.o(i.DrvTIMER_OpenCounter) refers to drvtimer.o(.data) for bIsTimer0Initial
+    drvtimer.o(i.DrvTIMER_OpenCounter) refers to drvtimer.o(.bss) for tTime0Event
+    drvtimer.o(i.DrvTIMER_OpenCounter) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_ResetIntTicks) refers to drvtimer.o(.data) for uTimer0Tick
+    drvtimer.o(i.DrvTIMER_SelectCaptureEdge) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_SelectCounterDetectPhase) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_SelectExternalMode) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_SetTimerEvent) refers to drvtimer.o(.data) for uTime0EventCount
+    drvtimer.o(i.DrvTIMER_SetTimerEvent) refers to drvtimer.o(.bss) for tTime0Event
+    drvtimer.o(i.DrvTIMER_Start) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvTIMER_StartCounter) refers to drvtimer.o(.constdata) for CH_OFFSET
+    drvtimer.o(i.DrvWDT_Close) refers to drvtimer.o(i.DrvWDT_Ioctl) for DrvWDT_Ioctl
+    drvtimer.o(i.DrvWDT_Close) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvtimer.o(i.DrvWDT_InstallISR) refers to drvtimer.o(.data) for fnCallBack_WDT
+    drvtimer.o(i.DrvWDT_Ioctl) refers to 20170418.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    drvtimer.o(i.DrvWDT_Ioctl) refers to drvtimer.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    drvtimer.o(i.DrvWDT_Ioctl) refers to drvtimer.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    drvtimer.o(i.DrvWDT_Ioctl) refers to drvtimer.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    drvtimer.o(i.DrvWDT_Open) refers to drvtimer.o(i.DrvWDT_Ioctl) for DrvWDT_Ioctl
+    drvtimer.o(i.GetTimerClock) refers to drvsys.o(i.DrvSYS_GetExtClockFreq) for DrvSYS_GetExtClockFreq
+    drvtimer.o(i.GetTimerClock) refers to drvsys.o(i.DrvSYS_GetHCLKFreq) for DrvSYS_GetHCLKFreq
+    drvtimer.o(i.TMR0_IRQHandler) refers to drvtimer.o(.data) for uTimer0Tick
+    drvtimer.o(i.TMR0_IRQHandler) refers to drvtimer.o(.bss) for tTime0Event
+    drvtimer.o(i.TMR1_IRQHandler) refers to drvtimer.o(.data) for uTimer1Tick
+    drvtimer.o(i.TMR1_IRQHandler) refers to drvtimer.o(.bss) for tTime1Event
+    drvtimer.o(i.TMR2_IRQHandler) refers to drvtimer.o(.data) for uTimer2Tick
+    drvtimer.o(i.TMR2_IRQHandler) refers to drvtimer.o(.bss) for tTime2Event
+    drvtimer.o(i.TMR3_IRQHandler) refers to drvtimer.o(.data) for uTimer3Tick
+    drvtimer.o(i.TMR3_IRQHandler) refers to drvtimer.o(.bss) for tTime3Event
+    drvtimer.o(i.WDT_IRQHandler) refers to drvtimer.o(.data) for fnCallBack_WDT
+    __main.o(!!!main) refers to rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to 20170418.o(i.main) for main
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    rtentry4.o(.ARM.exidx) refers to rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_nuc1xx.o(.text) for __user_initial_stackheap
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to tempstk.o(.text) for __temporary_stack_top
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to __main.o(!!!main) for __main
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002A) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000008) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000F) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000031) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit2.o(.ARM.Collect$$libinit$$0000000E) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000024) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000025) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000006) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000009) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000003) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing core_cm0.o(.emb_text), (32 bytes).
+    Removing 20170418.o(i.display_128x64), (48 bytes).
+    Removing 20170418.o(i.display_graphic_16x16), (46 bytes).
+    Removing 20170418.o(i.display_graphic_5x8), (38 bytes).
+    Removing 20170418.o(i.display_graphic_8x16), (50 bytes).
+    Removing 20170418.o(i.itoa), (88 bytes).
+    Removing drvadc.o(i.DrvADC_Close), (112 bytes).
+    Removing drvadc.o(i.DrvADC_ConfigADCChannel7), (72 bytes).
+    Removing drvadc.o(i.DrvADC_DiffModeOutputFormat), (28 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp0), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp0Int), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp1), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCCmp1Int), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableADCInt), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableExtTrigger), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisablePDMA), (20 bytes).
+    Removing drvadc.o(i.DrvADC_DisableSelfCalibration), (20 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp0), (148 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp0Int), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp1), (148 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCCmp1Int), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableADCInt), (72 bytes).
+    Removing drvadc.o(i.DrvADC_EnableExtTrigger), (80 bytes).
+    Removing drvadc.o(i.DrvADC_EnablePDMA), (32 bytes).
+    Removing drvadc.o(i.DrvADC_EnableSelfCalibration), (20 bytes).
+    Removing drvadc.o(i.DrvADC_GetConversionRate), (164 bytes).
+    Removing drvadc.o(i.DrvADC_GetVersion), (8 bytes).
+    Removing drvadc.o(i.DrvADC_IsCalibrationDone), (24 bytes).
+    Removing drvadc.o(i.DrvADC_IsDataOverrun), (56 bytes).
+    Removing drvadc.o(i.DrvADC_IsDataValid), (56 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCClkSrc), (28 bytes).
+    Removing drvadc.o(i.DrvADC_SetADCDivisor), (32 bytes).
+    Removing drvadc.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvadc.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvgpio.o(i.DrvGPIO_Close), (68 bytes).
+    Removing drvgpio.o(i.DrvGPIO_ClrBitMask), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_ClrPortMask), (32 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableDebounce), (52 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableEINT0), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableEINT1), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_DisableInt), (80 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableDebounce), (52 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableDigitalInputBit), (40 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableEINT0), (152 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableEINT1), (152 bytes).
+    Removing drvgpio.o(i.DrvGPIO_EnableInt), (240 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetBitMask), (28 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetDebounceSampleCycle), (16 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetDoutBit), (40 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetIntStatus), (16 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetPortBits), (16 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetPortDoutBits), (28 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetPortMask), (16 bytes).
+    Removing drvgpio.o(i.DrvGPIO_GetVersion), (8 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetBitMask), (36 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetDebounceTime), (64 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetIntCallback), (20 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetPortBits), (20 bytes).
+    Removing drvgpio.o(i.DrvGPIO_SetPortMask), (32 bytes).
+    Removing drvgpio.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvgpio.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvgpio.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvspi.o(i.DrvSPI_3WireAbort), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstRead), (68 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstTransfer), (112 bytes).
+    Removing drvspi.o(i.DrvSPI_BurstWrite), (68 bytes).
+    Removing drvspi.o(i.DrvSPI_Close), (324 bytes).
+    Removing drvspi.o(i.DrvSPI_Clr3WireStartIntFlag), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrGo), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrIntFlag), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_ClrSS), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_Disable3Wire), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_Disable3WireStartInt), (100 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableAutoSS), (44 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableDivOne), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_DisableInt), (100 bytes).
+    Removing drvspi.o(i.DrvSPI_DumpRxRegister), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_Enable3Wire), (32 bytes).
+    Removing drvspi.o(i.DrvSPI_Enable3WireStartInt), (140 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableAutoSS), (56 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableDivOne), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_EnableInt), (140 bytes).
+    Removing drvspi.o(i.DrvSPI_Get3WireStartIntFlag), (20 bytes).
+    Removing drvspi.o(i.DrvSPI_GetClock1Freq), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_GetClock2Freq), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_GetIntFlag), (20 bytes).
+    Removing drvspi.o(i.DrvSPI_GetLevelTriggerStatus), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_GetVersion), (8 bytes).
+    Removing drvspi.o(i.DrvSPI_IsBusy), (20 bytes).
+    Removing drvspi.o(i.DrvSPI_Open), (972 bytes).
+    Removing drvspi.o(i.DrvSPI_Set2BitTransferMode), (80 bytes).
+    Removing drvspi.o(i.DrvSPI_SetBitLength), (64 bytes).
+    Removing drvspi.o(i.DrvSPI_SetByteReorder), (108 bytes).
+    Removing drvspi.o(i.DrvSPI_SetClockFreq), (212 bytes).
+    Removing drvspi.o(i.DrvSPI_SetEndian), (60 bytes).
+    Removing drvspi.o(i.DrvSPI_SetGo), (28 bytes).
+    Removing drvspi.o(i.DrvSPI_SetPDMA), (112 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSS), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSlaveSelectActiveLevel), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetSuspendCycle), (88 bytes).
+    Removing drvspi.o(i.DrvSPI_SetTriggerMode), (36 bytes).
+    Removing drvspi.o(i.DrvSPI_SetTxRegister), (48 bytes).
+    Removing drvspi.o(i.DrvSPI_SetVariableClockFunction), (68 bytes).
+    Removing drvspi.o(i.DrvSPI_SingleRead), (60 bytes).
+    Removing drvspi.o(i.DrvSPI_SingleWrite), (60 bytes).
+    Removing drvspi.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvspi.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvspi.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvspi.o(.data), (16 bytes).
+    Removing drvsys.o(i.DrvSYS_ClearClockSwitchStatus), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ClearResetSource), (12 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableBODLowPowerMode), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableHighPerformanceMode), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableLowVoltReset), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_DisablePOR), (12 bytes).
+    Removing drvsys.o(i.DrvSYS_DisableTemperatureSensor), (18 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableBODLowPowerMode), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableHighPerformanceMode), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableLowVoltReset), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnablePOR), (10 bytes).
+    Removing drvsys.o(i.DrvSYS_EnableTemperatureSensor), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_EnterPowerDown), (56 bytes).
+    Removing drvsys.o(i.DrvSYS_GetBODState), (12 bytes).
+    Removing drvsys.o(i.DrvSYS_GetChipClockSourceStatus), (88 bytes).
+    Removing drvsys.o(i.DrvSYS_GetClockSwitchStatus), (16 bytes).
+    Removing drvsys.o(i.DrvSYS_GetPLLContent), (192 bytes).
+    Removing drvsys.o(i.DrvSYS_GetResetSource), (8 bytes).
+    Removing drvsys.o(i.DrvSYS_GetVersion), (8 bytes).
+    Removing drvsys.o(i.DrvSYS_IsProtectedRegLocked), (16 bytes).
+    Removing drvsys.o(i.DrvSYS_LockProtectedReg), (36 bytes).
+    Removing drvsys.o(i.DrvSYS_Open), (188 bytes).
+    Removing drvsys.o(i.DrvSYS_ReadProductID), (8 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetCPU), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetChip), (20 bytes).
+    Removing drvsys.o(i.DrvSYS_ResetIP), (110 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectBODVolt), (26 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectIPClockSource), (352 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectPLLSource), (32 bytes).
+    Removing drvsys.o(i.DrvSYS_SelectSysTickSource), (52 bytes).
+    Removing drvsys.o(i.DrvSYS_SetBODFunction), (92 bytes).
+    Removing drvsys.o(i.DrvSYS_SetFreqDividerOutput), (76 bytes).
+    Removing drvsys.o(i.DrvSYS_SetIPClock), (120 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPLLContent), (76 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPLLMode), (52 bytes).
+    Removing drvsys.o(i.DrvSYS_SetPowerDownWakeUpInt), (108 bytes).
+    Removing drvsys.o(i.DrvSYS_UnlockProtectedReg), (44 bytes).
+    Removing drvsys.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing drvsys.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing drvsys.o(i.NVIC_SetPriority), (120 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearCaptureIntFlag), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearIntFlag), (100 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ClearTimerEvent), (212 bytes).
+    Removing drvtimer.o(i.DrvTIMER_Close), (212 bytes).
+    Removing drvtimer.o(i.DrvTIMER_CloseCapture), (60 bytes).
+    Removing drvtimer.o(i.DrvTIMER_Delay), (38 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCapture), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCaptureDebounce), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCaptureInt), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableCounterDebounce), (64 bytes).
+    Removing drvtimer.o(i.DrvTIMER_DisableInt), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCapture), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCaptureDebounce), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCaptureInt), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_EnableCounterDebounce), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCaptureData), (56 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCaptureIntFlag), (60 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetCounters), (56 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetIntFlag), (72 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetIntTicks), (68 bytes).
+    Removing drvtimer.o(i.DrvTIMER_GetVersion), (8 bytes).
+    Removing drvtimer.o(i.DrvTIMER_OpenCapture), (96 bytes).
+    Removing drvtimer.o(i.DrvTIMER_OpenCounter), (564 bytes).
+    Removing drvtimer.o(i.DrvTIMER_ResetIntTicks), (84 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectCaptureEdge), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectCounterDetectPhase), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_SelectExternalMode), (76 bytes).
+    Removing drvtimer.o(i.DrvTIMER_StartCounter), (88 bytes).
+    Removing drvtimer.o(i.DrvWDT_Close), (80 bytes).
+    Removing drvtimer.o(i.DrvWDT_InstallISR), (28 bytes).
+    Removing drvtimer.o(i.DrvWDT_Ioctl), (224 bytes).
+    Removing drvtimer.o(i.DrvWDT_Open), (84 bytes).
+    Removing drvtimer.o(i.NVIC_DisableIRQ), (20 bytes).
+
+182 unused section(s) (total 12486 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_nuc1xx.o(RESET)
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
+    ..\..\..\CMSIS\CM0\CoreSupport\core_cm0.c 0x00000000   Number         0  core_cm0.o ABSOLUTE
+    ..\..\..\CMSIS\CM0\DeviceSupport\Nuvoton\NUC1xx\system_NUC1xx.c 0x00000000   Number         0  system_nuc1xx.o ABSOLUTE
+    ..\..\Src\Driver\DrvADC.c                0x00000000   Number         0  drvadc.o ABSOLUTE
+    ..\..\Src\Driver\DrvGPIO.c               0x00000000   Number         0  drvgpio.o ABSOLUTE
+    ..\..\Src\Driver\DrvSPI.c                0x00000000   Number         0  drvspi.o ABSOLUTE
+    ..\..\Src\Driver\DrvSYS.c                0x00000000   Number         0  drvsys.o ABSOLUTE
+    ..\..\Src\Driver\DrvTIMER.c              0x00000000   Number         0  drvtimer.o ABSOLUTE
+    ..\\..\\..\\CMSIS\\CM0\\CoreSupport\\core_cm0.c 0x00000000   Number         0  core_cm0.o ABSOLUTE
+    20170418.c                               0x00000000   Number         0  20170418.o ABSOLUTE
+    startup_NUC1xx.s                         0x00000000   Number         0  startup_nuc1xx.o ABSOLUTE
+    !!!main                                  0x000000c0   Section        8  __main.o(!!!main)
+    !!!scatter                               0x000000c8   Section       60  __scatter.o(!!!scatter)
+    !!handler_copy                           0x00000104   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x00000120   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x0000013c   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000001          0x0000013e   Section        4  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    .ARM.Collect$$libinit$$00000008          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000008)
+    .ARM.Collect$$libinit$$0000000A          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000F          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000F)
+    .ARM.Collect$$libinit$$00000011          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$0000002A          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002A)
+    .ARM.Collect$$libinit$$0000002C          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x00000142   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000031          0x00000142   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000031)
+    .ARM.Collect$$libshutdown$$00000000      0x00000144   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000003      0x00000146   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    .ARM.Collect$$libshutdown$$00000006      0x00000146   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    .ARM.Collect$$libshutdown$$00000009      0x00000146   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    .ARM.Collect$$libshutdown$$0000000B      0x00000146   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    .ARM.Collect$$libshutdown$$0000000E      0x00000146   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    .ARM.Collect$$libshutdown$$0000000F      0x00000146   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$rtentry$$00000000          0x00000148   Section        0  rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x00000148   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x00000148   Section        6  rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x0000014e   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0000014e   Section        4  rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x00000152   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x00000152   Section        8  rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x0000015a   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x0000015c   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x0000015c   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x00000160   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x00000168   Section      100  startup_nuc1xx.o(.text)
+    Default_Handler                          0x00000193   Thumb Code     2  startup_nuc1xx.o(.text)
+    .text                                    0x000001cc   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x00000326   Section        0  heapauxi.o(.text)
+    .text                                    0x0000032c   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x0000036a   Section        0  exit.o(.text)
+    .text                                    0x00000378   Section        8  libspace.o(.text)
+    .text                                    0x00000380   Section        0  sys_exit.o(.text)
+    .text                                    0x0000038c   Section        2  use_no_semi.o(.text)
+    .text                                    0x0000038e   Section        0  indicate_semi.o(.text)
+    i.ADC_IRQHandler                         0x00000390   Section        0  drvadc.o(i.ADC_IRQHandler)
+    i.AdcContScanModeTest                    0x00000428   Section        0  20170418.o(i.AdcContScanModeTest)
+    i.AdcSingleCycleModeTest                 0x0000056c   Section        0  20170418.o(i.AdcSingleCycleModeTest)
+    i.BOD_IRQHandler                         0x0000061c   Section        0  drvsys.o(i.BOD_IRQHandler)
+    i.CalTimerInitValue                      0x00000644   Section        0  drvtimer.o(i.CalTimerInitValue)
+    CalTimerInitValue                        0x00000645   Thumb Code    70  drvtimer.o(i.CalTimerInitValue)
+    i.DECREASE_detect                        0x0000068c   Section        0  20170418.o(i.DECREASE_detect)
+    i.DOWN_detect                            0x00000708   Section        0  20170418.o(i.DOWN_detect)
+    i.DrvADC_GetConversionData               0x00000750   Section        0  drvadc.o(i.DrvADC_GetConversionData)
+    i.DrvADC_IsConversionDone                0x000007a4   Section        0  drvadc.o(i.DrvADC_IsConversionDone)
+    i.DrvADC_Open                            0x000007b8   Section        0  drvadc.o(i.DrvADC_Open)
+    i.DrvADC_SetADCChannel                   0x00000898   Section        0  drvadc.o(i.DrvADC_SetADCChannel)
+    i.DrvADC_SetADCInputMode                 0x000008b0   Section        0  drvadc.o(i.DrvADC_SetADCInputMode)
+    i.DrvADC_SetADCOperationMode             0x000008dc   Section        0  drvadc.o(i.DrvADC_SetADCOperationMode)
+    i.DrvADC_StartConvert                    0x00000918   Section        0  drvadc.o(i.DrvADC_StartConvert)
+    i.DrvADC_StopConvert                     0x0000093c   Section        0  drvadc.o(i.DrvADC_StopConvert)
+    i.DrvGPIO_ClrBit                         0x00000950   Section        0  drvgpio.o(i.DrvGPIO_ClrBit)
+    i.DrvGPIO_DisableDigitalInputBit         0x0000097c   Section        0  drvgpio.o(i.DrvGPIO_DisableDigitalInputBit)
+    i.DrvGPIO_GetBit                         0x000009a4   Section        0  drvgpio.o(i.DrvGPIO_GetBit)
+    i.DrvGPIO_InitFunction                   0x000009d0   Section        0  drvgpio.o(i.DrvGPIO_InitFunction)
+    i.DrvGPIO_Open                           0x00001128   Section        0  drvgpio.o(i.DrvGPIO_Open)
+    i.DrvGPIO_SetBit                         0x000011b0   Section        0  drvgpio.o(i.DrvGPIO_SetBit)
+    i.DrvSYS_Delay                           0x000011dc   Section        0  drvsys.o(i.DrvSYS_Delay)
+    i.DrvSYS_GetExtClockFreq                 0x00001208   Section        0  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    i.DrvSYS_GetHCLKFreq                     0x00001210   Section        0  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    i.DrvSYS_GetPLLClockFreq                 0x0000127c   Section        0  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    i.DrvSYS_SelectHCLKSource                0x000012f0   Section        0  drvsys.o(i.DrvSYS_SelectHCLKSource)
+    i.DrvSYS_SetClockDivider                 0x00001328   Section        0  drvsys.o(i.DrvSYS_SetClockDivider)
+    i.DrvSYS_SetOscCtrl                      0x000013b0   Section        0  drvsys.o(i.DrvSYS_SetOscCtrl)
+    i.DrvTIMER_EnableInt                     0x00001430   Section        0  drvtimer.o(i.DrvTIMER_EnableInt)
+    i.DrvTIMER_Init                          0x0000148c   Section        0  drvtimer.o(i.DrvTIMER_Init)
+    i.DrvTIMER_Open                          0x000014b0   Section        0  drvtimer.o(i.DrvTIMER_Open)
+    i.DrvTIMER_SetTimerEvent                 0x0000179c   Section        0  drvtimer.o(i.DrvTIMER_SetTimerEvent)
+    i.DrvTIMER_Start                         0x000019f4   Section        0  drvtimer.o(i.DrvTIMER_Start)
+    i.EINT0_IRQHandler                       0x00001a38   Section        0  drvgpio.o(i.EINT0_IRQHandler)
+    i.EINT1_IRQHandler                       0x00001a5c   Section        0  drvgpio.o(i.EINT1_IRQHandler)
+    i.ENTER_detect                           0x00001a80   Section        0  20170418.o(i.ENTER_detect)
+    i.GPAB_IRQHandler                        0x00001ac8   Section        0  drvgpio.o(i.GPAB_IRQHandler)
+    i.GPCDE_IRQHandler                       0x00001b0c   Section        0  drvgpio.o(i.GPCDE_IRQHandler)
+    i.GetTimerClock                          0x00001b58   Section        0  drvtimer.o(i.GetTimerClock)
+    GetTimerClock                            0x00001b59   Thumb Code   114  drvtimer.o(i.GetTimerClock)
+    i.INCREASE_detect                        0x00001bd8   Section        0  20170418.o(i.INCREASE_detect)
+    i.Init_Devices                           0x00001c54   Section        0  20170418.o(i.Init_Devices)
+    i.Initial_lcd                            0x00001c9c   Section        0  20170418.o(i.Initial_lcd)
+    i.LCD_Port_Init                          0x00001dd8   Section        0  20170418.o(i.LCD_Port_Init)
+    i.NVIC_EnableIRQ                         0x00001e18   Section        0  drvtimer.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x00001e19   Thumb Code    14  drvtimer.o(i.NVIC_EnableIRQ)
+    i.NVIC_SetPriority                       0x00001e2c   Section        0  drvtimer.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00001e2d   Thumb Code   110  drvtimer.o(i.NVIC_SetPriority)
+    i.PWRWU_IRQHandler                       0x00001ea4   Section        0  drvsys.o(i.PWRWU_IRQHandler)
+    i.Port_Init                              0x00001ecc   Section        0  20170418.o(i.Port_Init)
+    i.SPI0_IRQHandler                        0x00001eec   Section        0  drvspi.o(i.SPI0_IRQHandler)
+    i.SPI1_IRQHandler                        0x00001f4c   Section        0  drvspi.o(i.SPI1_IRQHandler)
+    i.SPI2_IRQHandler                        0x00001fac   Section        0  drvspi.o(i.SPI2_IRQHandler)
+    i.SPI3_IRQHandler                        0x0000200c   Section        0  drvspi.o(i.SPI3_IRQHandler)
+    i.SingleEndInput_ScanOpModeChannelSelect 0x0000206c   Section        0  20170418.o(i.SingleEndInput_ScanOpModeChannelSelect)
+    i.SysTimerDelay                          0x000020d0   Section        0  20170418.o(i.SysTimerDelay)
+    i.SystemCoreClockUpdate                  0x000020f4   Section        0  system_nuc1xx.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00002194   Section        0  system_nuc1xx.o(i.SystemInit)
+    i.TMR0_IRQHandler                        0x00002198   Section        0  drvtimer.o(i.TMR0_IRQHandler)
+    i.TMR1_IRQHandler                        0x0000222c   Section        0  drvtimer.o(i.TMR1_IRQHandler)
+    i.TMR2_IRQHandler                        0x000022c0   Section        0  drvtimer.o(i.TMR2_IRQHandler)
+    i.TMR3_IRQHandler                        0x00002354   Section        0  drvtimer.o(i.TMR3_IRQHandler)
+    i.Timer0_Callback                        0x000023e8   Section        0  20170418.o(i.Timer0_Callback)
+    i.Timer0_Init                            0x00002434   Section        0  20170418.o(i.Timer0_Init)
+    i.UP_detect                              0x00002458   Section        0  20170418.o(i.UP_detect)
+    i.WDT_IRQHandler                         0x000024a0   Section        0  drvtimer.o(i.WDT_IRQHandler)
+    i.__ARM_common_switch8                   0x000024d4   Section        0  20170418.o(i.__ARM_common_switch8)
+    i.ad9850_Port_Init                       0x000024f0   Section        0  20170418.o(i.ad9850_Port_Init)
+    i.ad9850_reset                           0x0000256c   Section        0  20170418.o(i.ad9850_reset)
+    i.ad9850_wr_parrel                       0x000025b0   Section        0  20170418.o(i.ad9850_wr_parrel)
+    i.atoifreq                               0x00002676   Section        0  20170418.o(i.atoifreq)
+    i.button_Port_Init                       0x000026a0   Section        0  20170418.o(i.button_Port_Init)
+    i.clear_screen                           0x000026d6   Section        0  20170418.o(i.clear_screen)
+    i.display_GB2312_string                  0x0000270c   Section        0  20170418.o(i.display_GB2312_string)
+    i.display_ui_act                         0x0000281c   Section        0  20170418.o(i.display_ui_act)
+    i.get_and_write_16x16                    0x00002870   Section        0  20170418.o(i.get_and_write_16x16)
+    i.get_and_write_8x16                     0x000028f6   Section        0  20170418.o(i.get_and_write_8x16)
+    i.get_data_from_ROM                      0x0000297c   Section        0  20170418.o(i.get_data_from_ROM)
+    get_data_from_ROM                        0x0000297d   Thumb Code    68  20170418.o(i.get_data_from_ROM)
+    i.in_de                                  0x000029c0   Section        0  20170418.o(i.in_de)
+    i.in_de_degree                           0x000029ec   Section        0  20170418.o(i.in_de_degree)
+    i.in_de_f                                0x00002a88   Section        0  20170418.o(i.in_de_f)
+    i.init_act                               0x00002ab4   Section        0  20170418.o(i.init_act)
+    i.itoafreq                               0x000030b4   Section        0  20170418.o(i.itoafreq)
+    i.itodegree                              0x00003108   Section        0  20170418.o(i.itodegree)
+    i.lcd_address                            0x0000317c   Section        0  20170418.o(i.lcd_address)
+    i.main                                   0x000031a4   Section        0  20170418.o(i.main)
+    i.send_command_to_ROM                    0x00003344   Section        0  20170418.o(i.send_command_to_ROM)
+    i.setup_AD9850                           0x00003390   Section        0  20170418.o(i.setup_AD9850)
+    i.transfer_command_lcd                   0x000035e4   Section        0  20170418.o(i.transfer_command_lcd)
+    i.transfer_data_lcd                      0x00003640   Section        0  20170418.o(i.transfer_data_lcd)
+    i.ui_proc0                               0x000036a0   Section        0  20170418.o(i.ui_proc0)
+    i.ui_proc101                             0x00003714   Section        0  20170418.o(i.ui_proc101)
+    i.ui_proc102                             0x00003894   Section        0  20170418.o(i.ui_proc102)
+    i.ui_proc103                             0x00003a40   Section        0  20170418.o(i.ui_proc103)
+    i.ui_proc201                             0x00003d30   Section        0  20170418.o(i.ui_proc201)
+    i.ui_proc203                             0x00003eb0   Section        0  20170418.o(i.ui_proc203)
+    i.ui_proc204                             0x000040dc   Section        0  20170418.o(i.ui_proc204)
+    i.ui_proc205                             0x00004310   Section        0  20170418.o(i.ui_proc205)
+    i.ui_proc206                             0x00004534   Section        0  20170418.o(i.ui_proc206)
+    i.ui_proc207                             0x00004638   Section        0  20170418.o(i.ui_proc207)
+    i.ui_proc208                             0x000047d8   Section        0  20170418.o(i.ui_proc208)
+    i.ui_proc209                             0x00004a04   Section        0  20170418.o(i.ui_proc209)
+    i.ui_proc210                             0x00004c38   Section        0  20170418.o(i.ui_proc210)
+    i.ui_proc404                             0x00004e5c   Section        0  20170418.o(i.ui_proc404)
+    i.ui_proc405                             0x00005048   Section        0  20170418.o(i.ui_proc405)
+    i.ui_proc406                             0x000051fc   Section        0  20170418.o(i.ui_proc406)
+    i.ui_proc407                             0x00005430   Section        0  20170418.o(i.ui_proc407)
+    i.ui_proc408                             0x0000566c   Section        0  20170418.o(i.ui_proc408)
+    i.ui_proc409                             0x00005898   Section        0  20170418.o(i.ui_proc409)
+    i.ui_proc505                             0x00005ad8   Section        0  20170418.o(i.ui_proc505)
+    i.ui_proc701                             0x00005b68   Section        0  20170418.o(i.ui_proc701)
+    i.ui_proc703                             0x00005cf0   Section        0  20170418.o(i.ui_proc703)
+    i.ui_proc704                             0x00005f2c   Section        0  20170418.o(i.ui_proc704)
+    i.ui_proc705                             0x0000616c   Section        0  20170418.o(i.ui_proc705)
+    i.ui_proc706                             0x0000639c   Section        0  20170418.o(i.ui_proc706)
+    i.ui_proc707                             0x00006488   Section        0  20170418.o(i.ui_proc707)
+    i.ui_state_proc                          0x00006630   Section        0  20170418.o(i.ui_state_proc)
+    .constdata                               0x00006754   Section       16  drvsys.o(.constdata)
+    .constdata                               0x00006764   Section       16  drvtimer.o(.constdata)
+    .data                                    0x20000000   Section       28  system_nuc1xx.o(.data)
+    .data                                    0x2000001c   Section      652  20170418.o(.data)
+    .data                                    0x200002a8   Section       12  drvadc.o(.data)
+    g_ptADCCallBack                          0x200002a8   Data           4  drvadc.o(.data)
+    g_ptADCMP0CallBack                       0x200002ac   Data           4  drvadc.o(.data)
+    g_ptADCMP1CallBack                       0x200002b0   Data           4  drvadc.o(.data)
+    .data                                    0x200002b4   Section       16  drvgpio.o(.data)
+    _pfGPABCallback                          0x200002b4   Data           4  drvgpio.o(.data)
+    _pfGPCDECallback                         0x200002b8   Data           4  drvgpio.o(.data)
+    _pfEINT0Callback                         0x200002bc   Data           4  drvgpio.o(.data)
+    _pfEINT1Callback                         0x200002c0   Data           4  drvgpio.o(.data)
+    .data                                    0x200002c4   Section        8  drvsys.o(.data)
+    BOD_callbackFn                           0x200002c4   Data           4  drvsys.o(.data)
+    PWRWU_callbackFn                         0x200002c8   Data           4  drvsys.o(.data)
+    .data                                    0x200002cc   Section      104  drvtimer.o(.data)
+    uTimer0Tick                              0x200002fc   Data           4  drvtimer.o(.data)
+    uTimer1Tick                              0x20000300   Data           4  drvtimer.o(.data)
+    uTimer2Tick                              0x20000304   Data           4  drvtimer.o(.data)
+    uTimer3Tick                              0x20000308   Data           4  drvtimer.o(.data)
+    uTime0EventCount                         0x2000030c   Data           4  drvtimer.o(.data)
+    uTime1EventCount                         0x20000310   Data           4  drvtimer.o(.data)
+    uTime2EventCount                         0x20000314   Data           4  drvtimer.o(.data)
+    uTime3EventCount                         0x20000318   Data           4  drvtimer.o(.data)
+    _sys_uTimer0TickPerSecond                0x20000320   Data           4  drvtimer.o(.data)
+    _sys_uTimer1TickPerSecond                0x20000324   Data           4  drvtimer.o(.data)
+    _sys_uTimer2TickPerSecond                0x20000328   Data           4  drvtimer.o(.data)
+    _sys_uTimer3TickPerSecond                0x2000032c   Data           4  drvtimer.o(.data)
+    fnCallBack_WDT                           0x20000330   Data           4  drvtimer.o(.data)
+    .bss                                     0x20000334   Section      916  20170418.o(.bss)
+    .bss                                     0x200006c8   Section       12  drvadc.o(.bss)
+    g_pu32UserData                           0x200006c8   Data          12  drvadc.o(.bss)
+    .bss                                     0x200006d4   Section       80  drvspi.o(.bss)
+    g_sSpiHandler                            0x200006d4   Data          80  drvspi.o(.bss)
+    .bss                                     0x20000724   Section       80  drvtimer.o(.bss)
+    tTime0Event                              0x20000724   Data          20  drvtimer.o(.bss)
+    tTime1Event                              0x20000738   Data          20  drvtimer.o(.bss)
+    tTime2Event                              0x2000074c   Data          20  drvtimer.o(.bss)
+    tTime3Event                              0x20000760   Data          20  drvtimer.o(.bss)
+    .bss                                     0x20000774   Section       96  libspace.o(.bss)
+    HEAP                                     0x200007d8   Section        0  startup_nuc1xx.o(HEAP)
+    STACK                                    0x200007d8   Section     1024  startup_nuc1xx.o(STACK)
+    Heap_Mem                                 0x200007d8   Data           0  startup_nuc1xx.o(HEAP)
+    Stack_Mem                                0x200007d8   Data        1024  startup_nuc1xx.o(STACK)
+    __initial_sp                             0x20000bd8   Data           0  startup_nuc1xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  20170418.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_nuc1xx.o(RESET)
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __main                                   0x000000c1   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x000000c9   Thumb Code    52  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x000000d9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x00000105   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x00000121   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x0000013d   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_fp_1                       0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    __rt_lib_init_alloca_1                   0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_argv_1                     0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002A)
+    __rt_lib_init_atexit_1                   0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_clock_1                    0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_cpp_1                      0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_exceptions_1               0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_fp_trap_1                  0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_getenv_1                   0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_heap_1                     0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000008)
+    __rt_lib_init_lc_collate_1               0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000F)
+    __rt_lib_init_lc_ctype_1                 0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_monetary_1              0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_numeric_1               0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_time_1                  0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_rand_1                     0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_init_return                     0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000031)
+    __rt_lib_init_signal_1                   0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_stdio_1                    0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_user_alloc_1               0x00000143   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_shutdown                        0x00000145   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_fp_trap_1              0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    __rt_lib_shutdown_heap_1                 0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    __rt_lib_shutdown_return                 0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_signal_1               0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    __rt_lib_shutdown_stdio_1                0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    __rt_lib_shutdown_user_alloc_1           0x00000147   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    __rt_entry                               0x00000149   Thumb Code     0  rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x00000149   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x00000149   Thumb Code     0  rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x0000014f   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0000014f   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x00000153   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x00000153   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x0000015b   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x0000015d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x0000015d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x00000161   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x00000169   Thumb Code    32  startup_nuc1xx.o(.text)
+    NMI_Handler                              0x00000189   Thumb Code     2  startup_nuc1xx.o(.text)
+    HardFault_Handler                        0x0000018b   Thumb Code     2  startup_nuc1xx.o(.text)
+    SVC_Handler                              0x0000018d   Thumb Code     2  startup_nuc1xx.o(.text)
+    PendSV_Handler                           0x0000018f   Thumb Code     2  startup_nuc1xx.o(.text)
+    SysTick_Handler                          0x00000191   Thumb Code     2  startup_nuc1xx.o(.text)
+    ACMP_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    CAN0_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    I2C0_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    I2C1_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    I2S_IRQHandler                           0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    PDMA_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    PS2_IRQHandler                           0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    PWMA_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    PWMB_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    RTC_IRQHandler                           0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    UART02_IRQHandler                        0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    UART1_IRQHandler                         0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    USBD_IRQHandler                          0x00000193   Thumb Code     0  startup_nuc1xx.o(.text)
+    __user_initial_stackheap                 0x00000195   Thumb Code     0  startup_nuc1xx.o(.text)
+    __aeabi_uidiv                            0x000001cd   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x000001cd   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x000001e1   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x000001e1   Thumb Code   326  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x00000327   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x00000329   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x0000032b   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x0000032d   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x0000036b   Thumb Code    12  exit.o(.text)
+    __user_libspace                          0x00000379   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x00000379   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x00000379   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x00000381   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x0000038d   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x0000038d   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0000038f   Thumb Code     0  indicate_semi.o(.text)
+    ADC_IRQHandler                           0x00000391   Thumb Code   130  drvadc.o(i.ADC_IRQHandler)
+    AdcContScanModeTest                      0x00000429   Thumb Code   278  20170418.o(i.AdcContScanModeTest)
+    AdcSingleCycleModeTest                   0x0000056d   Thumb Code   152  20170418.o(i.AdcSingleCycleModeTest)
+    BOD_IRQHandler                           0x0000061d   Thumb Code    36  drvsys.o(i.BOD_IRQHandler)
+    DECREASE_detect                          0x0000068d   Thumb Code   106  20170418.o(i.DECREASE_detect)
+    DOWN_detect                              0x00000709   Thumb Code    58  20170418.o(i.DOWN_detect)
+    DrvADC_GetConversionData                 0x00000751   Thumb Code    76  drvadc.o(i.DrvADC_GetConversionData)
+    DrvADC_IsConversionDone                  0x000007a5   Thumb Code    16  drvadc.o(i.DrvADC_IsConversionDone)
+    DrvADC_Open                              0x000007b9   Thumb Code   216  drvadc.o(i.DrvADC_Open)
+    DrvADC_SetADCChannel                     0x00000899   Thumb Code    18  drvadc.o(i.DrvADC_SetADCChannel)
+    DrvADC_SetADCInputMode                   0x000008b1   Thumb Code    38  drvadc.o(i.DrvADC_SetADCInputMode)
+    DrvADC_SetADCOperationMode               0x000008dd   Thumb Code    54  drvadc.o(i.DrvADC_SetADCOperationMode)
+    DrvADC_StartConvert                      0x00000919   Thumb Code    32  drvadc.o(i.DrvADC_StartConvert)
+    DrvADC_StopConvert                       0x0000093d   Thumb Code    16  drvadc.o(i.DrvADC_StopConvert)
+    DrvGPIO_ClrBit                           0x00000951   Thumb Code    36  drvgpio.o(i.DrvGPIO_ClrBit)
+    DrvGPIO_DisableDigitalInputBit           0x0000097d   Thumb Code    34  drvgpio.o(i.DrvGPIO_DisableDigitalInputBit)
+    DrvGPIO_GetBit                           0x000009a5   Thumb Code    36  drvgpio.o(i.DrvGPIO_GetBit)
+    DrvGPIO_InitFunction                     0x000009d1   Thumb Code  1864  drvgpio.o(i.DrvGPIO_InitFunction)
+    DrvGPIO_Open                             0x00001129   Thumb Code   126  drvgpio.o(i.DrvGPIO_Open)
+    DrvGPIO_SetBit                           0x000011b1   Thumb Code    36  drvgpio.o(i.DrvGPIO_SetBit)
+    DrvSYS_Delay                             0x000011dd   Thumb Code    34  drvsys.o(i.DrvSYS_Delay)
+    DrvSYS_GetExtClockFreq                   0x00001209   Thumb Code     4  drvsys.o(i.DrvSYS_GetExtClockFreq)
+    DrvSYS_GetHCLKFreq                       0x00001211   Thumb Code    92  drvsys.o(i.DrvSYS_GetHCLKFreq)
+    DrvSYS_GetPLLClockFreq                   0x0000127d   Thumb Code   100  drvsys.o(i.DrvSYS_GetPLLClockFreq)
+    DrvSYS_SelectHCLKSource                  0x000012f1   Thumb Code    46  drvsys.o(i.DrvSYS_SelectHCLKSource)
+    DrvSYS_SetClockDivider                   0x00001329   Thumb Code   128  drvsys.o(i.DrvSYS_SetClockDivider)
+    DrvSYS_SetOscCtrl                        0x000013b1   Thumb Code   118  drvsys.o(i.DrvSYS_SetOscCtrl)
+    DrvTIMER_EnableInt                       0x00001431   Thumb Code    78  drvtimer.o(i.DrvTIMER_EnableInt)
+    DrvTIMER_Init                            0x0000148d   Thumb Code    20  drvtimer.o(i.DrvTIMER_Init)
+    DrvTIMER_Open                            0x000014b1   Thumb Code   652  drvtimer.o(i.DrvTIMER_Open)
+    DrvTIMER_SetTimerEvent                   0x0000179d   Thumb Code   548  drvtimer.o(i.DrvTIMER_SetTimerEvent)
+    DrvTIMER_Start                           0x000019f5   Thumb Code    54  drvtimer.o(i.DrvTIMER_Start)
+    EINT0_IRQHandler                         0x00001a39   Thumb Code    26  drvgpio.o(i.EINT0_IRQHandler)
+    EINT1_IRQHandler                         0x00001a5d   Thumb Code    26  drvgpio.o(i.EINT1_IRQHandler)
+    ENTER_detect                             0x00001a81   Thumb Code    58  20170418.o(i.ENTER_detect)
+    GPAB_IRQHandler                          0x00001ac9   Thumb Code    60  drvgpio.o(i.GPAB_IRQHandler)
+    GPCDE_IRQHandler                         0x00001b0d   Thumb Code    68  drvgpio.o(i.GPCDE_IRQHandler)
+    INCREASE_detect                          0x00001bd9   Thumb Code   106  20170418.o(i.INCREASE_detect)
+    Init_Devices                             0x00001c55   Thumb Code    66  20170418.o(i.Init_Devices)
+    Initial_lcd                              0x00001c9d   Thumb Code   294  20170418.o(i.Initial_lcd)
+    LCD_Port_Init                            0x00001dd9   Thumb Code    64  20170418.o(i.LCD_Port_Init)
+    PWRWU_IRQHandler                         0x00001ea5   Thumb Code    32  drvsys.o(i.PWRWU_IRQHandler)
+    Port_Init                                0x00001ecd   Thumb Code    32  20170418.o(i.Port_Init)
+    SPI0_IRQHandler                          0x00001eed   Thumb Code    88  drvspi.o(i.SPI0_IRQHandler)
+    SPI1_IRQHandler                          0x00001f4d   Thumb Code    88  drvspi.o(i.SPI1_IRQHandler)
+    SPI2_IRQHandler                          0x00001fad   Thumb Code    88  drvspi.o(i.SPI2_IRQHandler)
+    SPI3_IRQHandler                          0x0000200d   Thumb Code    88  drvspi.o(i.SPI3_IRQHandler)
+    SingleEndInput_ScanOpModeChannelSelect   0x0000206d   Thumb Code    90  20170418.o(i.SingleEndInput_ScanOpModeChannelSelect)
+    SysTimerDelay                            0x000020d1   Thumb Code    32  20170418.o(i.SysTimerDelay)
+    SystemCoreClockUpdate                    0x000020f5   Thumb Code   130  system_nuc1xx.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00002195   Thumb Code     2  system_nuc1xx.o(i.SystemInit)
+    TMR0_IRQHandler                          0x00002199   Thumb Code   134  drvtimer.o(i.TMR0_IRQHandler)
+    TMR1_IRQHandler                          0x0000222d   Thumb Code   134  drvtimer.o(i.TMR1_IRQHandler)
+    TMR2_IRQHandler                          0x000022c1   Thumb Code   134  drvtimer.o(i.TMR2_IRQHandler)
+    TMR3_IRQHandler                          0x00002355   Thumb Code   134  drvtimer.o(i.TMR3_IRQHandler)
+    Timer0_Callback                          0x000023e9   Thumb Code    66  20170418.o(i.Timer0_Callback)
+    Timer0_Init                              0x00002435   Thumb Code    30  20170418.o(i.Timer0_Init)
+    UP_detect                                0x00002459   Thumb Code    58  20170418.o(i.UP_detect)
+    WDT_IRQHandler                           0x000024a1   Thumb Code    44  drvtimer.o(i.WDT_IRQHandler)
+    __ARM_common_switch8                     0x000024d5   Thumb Code    28  20170418.o(i.__ARM_common_switch8)
+    ad9850_Port_Init                         0x000024f1   Thumb Code   124  20170418.o(i.ad9850_Port_Init)
+    ad9850_reset                             0x0000256d   Thumb Code    68  20170418.o(i.ad9850_reset)
+    ad9850_wr_parrel                         0x000025b1   Thumb Code   198  20170418.o(i.ad9850_wr_parrel)
+    atoifreq                                 0x00002677   Thumb Code    42  20170418.o(i.atoifreq)
+    button_Port_Init                         0x000026a1   Thumb Code    54  20170418.o(i.button_Port_Init)
+    clear_screen                             0x000026d7   Thumb Code    52  20170418.o(i.clear_screen)
+    display_GB2312_string                    0x0000270d   Thumb Code   260  20170418.o(i.display_GB2312_string)
+    display_ui_act                           0x0000281d   Thumb Code    80  20170418.o(i.display_ui_act)
+    get_and_write_16x16                      0x00002871   Thumb Code   134  20170418.o(i.get_and_write_16x16)
+    get_and_write_8x16                       0x000028f7   Thumb Code   134  20170418.o(i.get_and_write_8x16)
+    in_de                                    0x000029c1   Thumb Code    42  20170418.o(i.in_de)
+    in_de_degree                             0x000029ed   Thumb Code   116  20170418.o(i.in_de_degree)
+    in_de_f                                  0x00002a89   Thumb Code    42  20170418.o(i.in_de_f)
+    init_act                                 0x00002ab5   Thumb Code  1488  20170418.o(i.init_act)
+    itoafreq                                 0x000030b5   Thumb Code    82  20170418.o(i.itoafreq)
+    itodegree                                0x00003109   Thumb Code    80  20170418.o(i.itodegree)
+    lcd_address                              0x0000317d   Thumb Code    40  20170418.o(i.lcd_address)
+    main                                     0x000031a5   Thumb Code   352  20170418.o(i.main)
+    send_command_to_ROM                      0x00003345   Thumb Code    74  20170418.o(i.send_command_to_ROM)
+    setup_AD9850                             0x00003391   Thumb Code   564  20170418.o(i.setup_AD9850)
+    transfer_command_lcd                     0x000035e5   Thumb Code    86  20170418.o(i.transfer_command_lcd)
+    transfer_data_lcd                        0x00003641   Thumb Code    92  20170418.o(i.transfer_data_lcd)
+    ui_proc0                                 0x000036a1   Thumb Code    88  20170418.o(i.ui_proc0)
+    ui_proc101                               0x00003715   Thumb Code   352  20170418.o(i.ui_proc101)
+    ui_proc102                               0x00003895   Thumb Code   380  20170418.o(i.ui_proc102)
+    ui_proc103                               0x00003a41   Thumb Code   680  20170418.o(i.ui_proc103)
+    ui_proc201                               0x00003d31   Thumb Code   352  20170418.o(i.ui_proc201)
+    ui_proc203                               0x00003eb1   Thumb Code   524  20170418.o(i.ui_proc203)
+    ui_proc204                               0x000040dd   Thumb Code   532  20170418.o(i.ui_proc204)
+    ui_proc205                               0x00004311   Thumb Code   516  20170418.o(i.ui_proc205)
+    ui_proc206                               0x00004535   Thumb Code   186  20170418.o(i.ui_proc206)
+    ui_proc207                               0x00004639   Thumb Code   380  20170418.o(i.ui_proc207)
+    ui_proc208                               0x000047d9   Thumb Code   524  20170418.o(i.ui_proc208)
+    ui_proc209                               0x00004a05   Thumb Code   532  20170418.o(i.ui_proc209)
+    ui_proc210                               0x00004c39   Thumb Code   516  20170418.o(i.ui_proc210)
+    ui_proc404                               0x00004e5d   Thumb Code   444  20170418.o(i.ui_proc404)
+    ui_proc405                               0x00005049   Thumb Code   380  20170418.o(i.ui_proc405)
+    ui_proc406                               0x000051fd   Thumb Code   532  20170418.o(i.ui_proc406)
+    ui_proc407                               0x00005431   Thumb Code   540  20170418.o(i.ui_proc407)
+    ui_proc408                               0x0000566d   Thumb Code   524  20170418.o(i.ui_proc408)
+    ui_proc409                               0x00005899   Thumb Code   540  20170418.o(i.ui_proc409)
+    ui_proc505                               0x00005ad9   Thumb Code   112  20170418.o(i.ui_proc505)
+    ui_proc701                               0x00005b69   Thumb Code   354  20170418.o(i.ui_proc701)
+    ui_proc703                               0x00005cf1   Thumb Code   530  20170418.o(i.ui_proc703)
+    ui_proc704                               0x00005f2d   Thumb Code   538  20170418.o(i.ui_proc704)
+    ui_proc705                               0x0000616d   Thumb Code   522  20170418.o(i.ui_proc705)
+    ui_proc706                               0x0000639d   Thumb Code   178  20170418.o(i.ui_proc706)
+    ui_proc707                               0x00006489   Thumb Code   384  20170418.o(i.ui_proc707)
+    ui_state_proc                            0x00006631   Thumb Code   292  20170418.o(i.ui_state_proc)
+    CH_OFFSET                                0x00006764   Data          16  drvtimer.o(.constdata)
+    Region$$Table$$Base                      0x00006774   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00006794   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000000   Data           4  system_nuc1xx.o(.data)
+    CyclesPerUs                              0x20000004   Data           4  system_nuc1xx.o(.data)
+    gau32ClkSrcTbl                           0x20000008   Data          20  system_nuc1xx.o(.data)
+    SPI_PORT                                 0x2000001c   Data          16  20170418.o(.data)
+    fontaddr                                 0x2000002c   Data           4  20170418.o(.data)
+    mode                                     0x20000030   Data           4  20170418.o(.data)
+    modechangeflag                           0x20000034   Data           4  20170418.o(.data)
+    mode1_freq                               0x20000038   Data           4  20170418.o(.data)
+    mode1_freq_b                             0x2000003c   Data           4  20170418.o(.data)
+    mode1_phasediff                          0x20000040   Data           4  20170418.o(.data)
+    init                                     0x20000044   Data           4  20170418.o(.data)
+    mode2_freq                               0x20000048   Data           4  20170418.o(.data)
+    mode2_phasediff                          0x2000004c   Data           4  20170418.o(.data)
+    mode3_freq                               0x20000050   Data           4  20170418.o(.data)
+    phase3_0                                 0x20000054   Data           4  20170418.o(.data)
+    phase3_90                                0x20000058   Data           4  20170418.o(.data)
+    stringdegree_00                          0x2000005c   Data           9  20170418.o(.data)
+    stringdegree_01                          0x20000065   Data           9  20170418.o(.data)
+    stringdegree_02                          0x2000006e   Data           9  20170418.o(.data)
+    stringdegree_03                          0x20000077   Data           9  20170418.o(.data)
+    stringdegree_04                          0x20000080   Data           9  20170418.o(.data)
+    stringdegree_05                          0x20000089   Data           9  20170418.o(.data)
+    stringdegree_06                          0x20000092   Data           9  20170418.o(.data)
+    stringdegree_07                          0x2000009b   Data           9  20170418.o(.data)
+    stringdegree_08                          0x200000a4   Data           9  20170418.o(.data)
+    a0_s0                                    0x200000ad   Data           5  20170418.o(.data)
+    a0_s1                                    0x200000b2   Data           5  20170418.o(.data)
+    a0_s2                                    0x200000b7   Data          13  20170418.o(.data)
+    a1_s0                                    0x200000c4   Data          15  20170418.o(.data)
+    a1_s1                                    0x200000d3   Data          15  20170418.o(.data)
+    a1_s2                                    0x200000e2   Data          15  20170418.o(.data)
+    a1_s3                                    0x200000f1   Data           7  20170418.o(.data)
+    a2_s0                                    0x200000f8   Data           5  20170418.o(.data)
+    a2_s1                                    0x200000fd   Data           4  20170418.o(.data)
+    a2_s2                                    0x20000101   Data           5  20170418.o(.data)
+    a2_s3                                    0x20000106   Data           2  20170418.o(.data)
+    a2_s4                                    0x20000108   Data           2  20170418.o(.data)
+    a2_s5                                    0x2000010a   Data           2  20170418.o(.data)
+    a2_s6                                    0x2000010c   Data           5  20170418.o(.data)
+    a2_s7                                    0x20000111   Data           2  20170418.o(.data)
+    a2_s8                                    0x20000113   Data           2  20170418.o(.data)
+    a2_s9                                    0x20000115   Data           2  20170418.o(.data)
+    a4_s0                                    0x20000117   Data          15  20170418.o(.data)
+    a4_s1                                    0x20000126   Data           5  20170418.o(.data)
+    a4_s2                                    0x2000012b   Data           4  20170418.o(.data)
+    a4_s3                                    0x2000012f   Data           5  20170418.o(.data)
+    a4_s4                                    0x20000134   Data           5  20170418.o(.data)
+    a4_s5                                    0x20000139   Data           5  20170418.o(.data)
+    a4_s6                                    0x2000013e   Data           2  20170418.o(.data)
+    a4_s7                                    0x20000140   Data           2  20170418.o(.data)
+    a4_s8                                    0x20000142   Data           2  20170418.o(.data)
+    a5_s0                                    0x20000144   Data          15  20170418.o(.data)
+    a5_s1                                    0x20000153   Data           5  20170418.o(.data)
+    a5_s2                                    0x20000158   Data           4  20170418.o(.data)
+    a5_s3                                    0x2000015c   Data           5  20170418.o(.data)
+    a5_s4                                    0x20000161   Data           9  20170418.o(.data)
+    a5_s5                                    0x2000016a   Data           5  20170418.o(.data)
+    a5_s6                                    0x2000016f   Data           2  20170418.o(.data)
+    a5_s7                                    0x20000171   Data           2  20170418.o(.data)
+    a5_s8                                    0x20000173   Data           2  20170418.o(.data)
+    a5_s9                                    0x20000175   Data           9  20170418.o(.data)
+    a5_s10                                   0x2000017e   Data          11  20170418.o(.data)
+    a7_s0                                    0x20000189   Data           5  20170418.o(.data)
+    a7_s1                                    0x2000018e   Data           4  20170418.o(.data)
+    a7_s2                                    0x20000192   Data           5  20170418.o(.data)
+    a7_s3                                    0x20000197   Data           2  20170418.o(.data)
+    a7_s4                                    0x20000199   Data           2  20170418.o(.data)
+    a7_s5                                    0x2000019b   Data           2  20170418.o(.data)
+    a7_s6                                    0x2000019d   Data           5  20170418.o(.data)
+    a7_s7                                    0x200001a2   Data           5  20170418.o(.data)
+    ui_state                                 0x200001a8   Data           4  20170418.o(.data)
+    key_ENTER_state                          0x200001ac   Data           4  20170418.o(.data)
+    key_ENTER_prestate                       0x200001b0   Data           4  20170418.o(.data)
+    ENTER_key_timer                          0x200001b4   Data           4  20170418.o(.data)
+    key_ENTER_flag                           0x200001b8   Data           4  20170418.o(.data)
+    key_DOWN_state                           0x200001bc   Data           4  20170418.o(.data)
+    key_DOWN_prestate                        0x200001c0   Data           4  20170418.o(.data)
+    key_DOWN_timer                           0x200001c4   Data           4  20170418.o(.data)
+    key_DOWN_flag                            0x200001c8   Data           4  20170418.o(.data)
+    key_UP_state                             0x200001cc   Data           4  20170418.o(.data)
+    key_UP_prestate                          0x200001d0   Data           4  20170418.o(.data)
+    key_UP_timer                             0x200001d4   Data           4  20170418.o(.data)
+    key_UP_flag                              0x200001d8   Data           4  20170418.o(.data)
+    key_INCREASE_state                       0x200001dc   Data           4  20170418.o(.data)
+    key_INCREASE_prestate                    0x200001e0   Data           4  20170418.o(.data)
+    key_INCREASE_timer                       0x200001e4   Data           4  20170418.o(.data)
+    key_INCREASE_flag                        0x200001e8   Data           4  20170418.o(.data)
+    degree_counter                           0x200001ec   Data           4  20170418.o(.data)
+    key_DECREASE_state                       0x200001f0   Data           4  20170418.o(.data)
+    key_DECREASE_prestate                    0x200001f4   Data           4  20170418.o(.data)
+    key_DECREASE_timer                       0x200001f8   Data           4  20170418.o(.data)
+    key_DECREASE_flag                        0x200001fc   Data           4  20170418.o(.data)
+    key_state                                0x20000200   Data           4  20170418.o(.data)
+    key_prestate                             0x20000204   Data           4  20170418.o(.data)
+    state                                    0x20000208   Data           4  20170418.o(.data)
+    key_timer                                0x2000020c   Data           4  20170418.o(.data)
+    key_flag                                 0x20000210   Data           4  20170418.o(.data)
+    istr1                                    0x20000214   Data           7  20170418.o(.data)
+    clock1s                                  0x2000021c   Data           4  20170418.o(.data)
+    clock1s_flag                             0x20000220   Data           4  20170418.o(.data)
+    times10s                                 0x20000224   Data           4  20170418.o(.data)
+    led                                      0x20000228   Data           4  20170418.o(.data)
+    scaling_ADC                              0x2000022c   Data           4  20170418.o(.data)
+    tmp_adc                                  0x20000230   Data           4  20170418.o(.data)
+    scaling_lA                               0x20000234   Data           4  20170418.o(.data)
+    scaling_allA                             0x20000238   Data           4  20170418.o(.data)
+    scaling_sA                               0x2000023c   Data           4  20170418.o(.data)
+    scaling_lB                               0x20000240   Data           4  20170418.o(.data)
+    scaling_allB                             0x20000244   Data           4  20170418.o(.data)
+    scaling_sB                               0x20000248   Data           4  20170418.o(.data)
+    adc_A                                    0x2000024c   Data           4  20170418.o(.data)
+    adc_B                                    0x20000250   Data           4  20170418.o(.data)
+    para_A_m                                 0x20000254   Data           4  20170418.o(.data)
+    para_A_p                                 0x20000258   Data           4  20170418.o(.data)
+    para_B_m                                 0x2000025c   Data           4  20170418.o(.data)
+    para_B_p                                 0x20000260   Data           4  20170418.o(.data)
+    flag                                     0x20000264   Data           4  20170418.o(.data)
+    change                                   0x20000268   Data           4  20170418.o(.data)
+    flag_test                                0x2000026c   Data           4  20170418.o(.data)
+    frequency                                0x20000270   Data           4  20170418.o(.data)
+    phase_cur1                               0x20000274   Data           4  20170418.o(.data)
+    phase_cur2                               0x20000278   Data           4  20170418.o(.data)
+    w0                                       0x2000027c   Data           1  20170418.o(.data)
+    w1                                       0x2000027d   Data           1  20170418.o(.data)
+    w2                                       0x2000027e   Data           1  20170418.o(.data)
+    w3                                       0x2000027f   Data           1  20170418.o(.data)
+    w4                                       0x20000280   Data           1  20170418.o(.data)
+    dds_fq                                   0x20000284   Data           4  20170418.o(.data)
+    dds_ph                                   0x20000288   Data           1  20170418.o(.data)
+    tmp                                      0x2000028c   Data           4  20170418.o(.data)
+    tmp_2                                    0x20000290   Data           4  20170418.o(.data)
+    q                                        0x20000294   Data           4  20170418.o(.data)
+    r                                        0x20000298   Data           4  20170418.o(.data)
+    a4_s9                                    0x2000029c   Data           4  20170418.o(.data)
+    sub1                                     0x200002a0   Data           4  20170418.o(.data)
+    sub2                                     0x200002a4   Data           4  20170418.o(.data)
+    bIsTimer0Initial                         0x200002cc   Data           4  drvtimer.o(.data)
+    bIsTimer1Initial                         0x200002d0   Data           4  drvtimer.o(.data)
+    bIsTimer2Initial                         0x200002d4   Data           4  drvtimer.o(.data)
+    bIsTimer3Initial                         0x200002d8   Data           4  drvtimer.o(.data)
+    bIsTimer0Used                            0x200002dc   Data           4  drvtimer.o(.data)
+    bIsTimer1Used                            0x200002e0   Data           4  drvtimer.o(.data)
+    bIsTimer2Used                            0x200002e4   Data           4  drvtimer.o(.data)
+    bIsTimer3Used                            0x200002e8   Data           4  drvtimer.o(.data)
+    bIsSetTime0Event                         0x200002ec   Data           4  drvtimer.o(.data)
+    bIsSetTime1Event                         0x200002f0   Data           4  drvtimer.o(.data)
+    bIsSetTime2Event                         0x200002f4   Data           4  drvtimer.o(.data)
+    bIsSetTime3Event                         0x200002f8   Data           4  drvtimer.o(.data)
+    u32EXTClockFreq                          0x2000031c   Data           4  drvtimer.o(.data)
+    a0                                       0x20000334   Data         144  20170418.o(.bss)
+    a1                                       0x200003c4   Data         144  20170418.o(.bss)
+    a2                                       0x20000454   Data         144  20170418.o(.bss)
+    a4                                       0x200004e4   Data         144  20170418.o(.bss)
+    a5                                       0x20000574   Data         144  20170418.o(.bss)
+    a7                                       0x20000604   Data         144  20170418.o(.bss)
+    act                                      0x20000694   Data          32  20170418.o(.bss)
+    a7_s8                                    0x200006b4   Data          10  20170418.o(.bss)
+    a7_s9                                    0x200006be   Data          10  20170418.o(.bss)
+    __libspace_start                         0x20000774   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x200007d4   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000169
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00006ac8, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00006794, Max: 0x00020000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO            3    RESET               startup_nuc1xx.o
+    0x000000c0   0x00000008   Code   RO         1922  * !!!main             c_p.l(__main.o)
+    0x000000c8   0x0000003c   Code   RO         2088    !!!scatter          c_p.l(__scatter.o)
+    0x00000104   0x0000001a   Code   RO         2090    !!handler_copy      c_p.l(__scatter_copy.o)
+    0x0000011e   0x00000002   PAD
+    0x00000120   0x0000001c   Code   RO         2092    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x0000013c   0x00000002   Code   RO         1960    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x0000013e   0x00000004   Code   RO         1973    .ARM.Collect$$libinit$$00000001  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1977    .ARM.Collect$$libinit$$00000008  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1979    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1981    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1984    .ARM.Collect$$libinit$$0000000F  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1986    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1988    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1990    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1992    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1994    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1996    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         1998    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2000    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2002    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2004    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2008    .ARM.Collect$$libinit$$0000002A  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2010    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2012    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x00000142   0x00000000   Code   RO         2014    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x00000142   0x00000002   Code   RO         2015    .ARM.Collect$$libinit$$00000031  c_p.l(libinit2.o)
+    0x00000144   0x00000002   Code   RO         2046    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x00000146   0x00000000   Code   RO         2073    .ARM.Collect$$libshutdown$$00000003  c_p.l(libshutdown2.o)
+    0x00000146   0x00000000   Code   RO         2076    .ARM.Collect$$libshutdown$$00000006  c_p.l(libshutdown2.o)
+    0x00000146   0x00000000   Code   RO         2079    .ARM.Collect$$libshutdown$$00000009  c_p.l(libshutdown2.o)
+    0x00000146   0x00000000   Code   RO         2081    .ARM.Collect$$libshutdown$$0000000B  c_p.l(libshutdown2.o)
+    0x00000146   0x00000000   Code   RO         2084    .ARM.Collect$$libshutdown$$0000000E  c_p.l(libshutdown2.o)
+    0x00000146   0x00000002   Code   RO         2085    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x00000148   0x00000000   Code   RO         1924    .ARM.Collect$$rtentry$$00000000  c_p.l(rtentry.o)
+    0x00000148   0x00000000   Code   RO         1930    .ARM.Collect$$rtentry$$00000002  c_p.l(rtentry2.o)
+    0x00000148   0x00000006   Code   RO         1942    .ARM.Collect$$rtentry$$00000004  c_p.l(rtentry4.o)
+    0x0000014e   0x00000000   Code   RO         1932    .ARM.Collect$$rtentry$$00000009  c_p.l(rtentry2.o)
+    0x0000014e   0x00000004   Code   RO         1933    .ARM.Collect$$rtentry$$0000000A  c_p.l(rtentry2.o)
+    0x00000152   0x00000000   Code   RO         1935    .ARM.Collect$$rtentry$$0000000C  c_p.l(rtentry2.o)
+    0x00000152   0x00000008   Code   RO         1936    .ARM.Collect$$rtentry$$0000000D  c_p.l(rtentry2.o)
+    0x0000015a   0x00000002   Code   RO         1965    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x0000015c   0x00000000   Code   RO         2019    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x0000015c   0x00000004   Code   RO         2020    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x00000160   0x00000006   Code   RO         2021    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x00000166   0x00000002   PAD
+    0x00000168   0x00000064   Code   RO            4  * .text               startup_nuc1xx.o
+    0x000001cc   0x0000015a   Code   RO         1916    .text               c_p.l(aeabi_sdiv.o)
+    0x00000326   0x00000006   Code   RO         1920    .text               c_p.l(heapauxi.o)
+    0x0000032c   0x0000003e   Code   RO         1946    .text               c_p.l(sys_stackheap_outer.o)
+    0x0000036a   0x0000000c   Code   RO         1949    .text               c_p.l(exit.o)
+    0x00000376   0x00000002   PAD
+    0x00000378   0x00000008   Code   RO         1961    .text               c_p.l(libspace.o)
+    0x00000380   0x0000000c   Code   RO         2016    .text               c_p.l(sys_exit.o)
+    0x0000038c   0x00000002   Code   RO         2035    .text               c_p.l(use_no_semi.o)
+    0x0000038e   0x00000000   Code   RO         2037    .text               c_p.l(indicate_semi.o)
+    0x0000038e   0x00000002   PAD
+    0x00000390   0x00000098   Code   RO          536    i.ADC_IRQHandler    drvadc.o
+    0x00000428   0x00000144   Code   RO           60    i.AdcContScanModeTest  20170418.o
+    0x0000056c   0x000000b0   Code   RO           61    i.AdcSingleCycleModeTest  20170418.o
+    0x0000061c   0x00000028   Code   RO         1322    i.BOD_IRQHandler    drvsys.o
+    0x00000644   0x00000046   Code   RO         1625    i.CalTimerInitValue  drvtimer.o
+    0x0000068a   0x00000002   PAD
+    0x0000068c   0x0000007c   Code   RO           62    i.DECREASE_detect   20170418.o
+    0x00000708   0x00000048   Code   RO           63    i.DOWN_detect       20170418.o
+    0x00000750   0x00000054   Code   RO          556    i.DrvADC_GetConversionData  drvadc.o
+    0x000007a4   0x00000014   Code   RO          560    i.DrvADC_IsConversionDone  drvadc.o
+    0x000007b8   0x000000e0   Code   RO          563    i.DrvADC_Open       drvadc.o
+    0x00000898   0x00000018   Code   RO          564    i.DrvADC_SetADCChannel  drvadc.o
+    0x000008b0   0x0000002c   Code   RO          567    i.DrvADC_SetADCInputMode  drvadc.o
+    0x000008dc   0x0000003c   Code   RO          568    i.DrvADC_SetADCOperationMode  drvadc.o
+    0x00000918   0x00000024   Code   RO          569    i.DrvADC_StartConvert  drvadc.o
+    0x0000093c   0x00000014   Code   RO          570    i.DrvADC_StopConvert  drvadc.o
+    0x00000950   0x0000002c   Code   RO          775    i.DrvGPIO_ClrBit    drvgpio.o
+    0x0000097c   0x00000028   Code   RO          779    i.DrvGPIO_DisableDigitalInputBit  drvgpio.o
+    0x000009a4   0x0000002c   Code   RO          788    i.DrvGPIO_GetBit    drvgpio.o
+    0x000009d0   0x00000758   Code   RO          797    i.DrvGPIO_InitFunction  drvgpio.o
+    0x00001128   0x00000088   Code   RO          798    i.DrvGPIO_Open      drvgpio.o
+    0x000011b0   0x0000002c   Code   RO          799    i.DrvGPIO_SetBit    drvgpio.o
+    0x000011dc   0x0000002c   Code   RO         1325    i.DrvSYS_Delay      drvsys.o
+    0x00001208   0x00000008   Code   RO         1340    i.DrvSYS_GetExtClockFreq  drvsys.o
+    0x00001210   0x0000006c   Code   RO         1341    i.DrvSYS_GetHCLKFreq  drvsys.o
+    0x0000127c   0x00000074   Code   RO         1342    i.DrvSYS_GetPLLClockFreq  drvsys.o
+    0x000012f0   0x00000038   Code   RO         1354    i.DrvSYS_SelectHCLKSource  drvsys.o
+    0x00001328   0x00000088   Code   RO         1359    i.DrvSYS_SetClockDivider  drvsys.o
+    0x000013b0   0x00000080   Code   RO         1362    i.DrvSYS_SetOscCtrl  drvsys.o
+    0x00001430   0x0000005c   Code   RO         1641    i.DrvTIMER_EnableInt  drvtimer.o
+    0x0000148c   0x00000024   Code   RO         1648    i.DrvTIMER_Init     drvtimer.o
+    0x000014b0   0x000002ec   Code   RO         1649    i.DrvTIMER_Open     drvtimer.o
+    0x0000179c   0x00000258   Code   RO         1656    i.DrvTIMER_SetTimerEvent  drvtimer.o
+    0x000019f4   0x00000044   Code   RO         1657    i.DrvTIMER_Start    drvtimer.o
+    0x00001a38   0x00000024   Code   RO          805    i.EINT0_IRQHandler  drvgpio.o
+    0x00001a5c   0x00000024   Code   RO          806    i.EINT1_IRQHandler  drvgpio.o
+    0x00001a80   0x00000048   Code   RO           64    i.ENTER_detect      20170418.o
+    0x00001ac8   0x00000044   Code   RO          807    i.GPAB_IRQHandler   drvgpio.o
+    0x00001b0c   0x0000004c   Code   RO          808    i.GPCDE_IRQHandler  drvgpio.o
+    0x00001b58   0x00000080   Code   RO         1663    i.GetTimerClock     drvtimer.o
+    0x00001bd8   0x0000007c   Code   RO           65    i.INCREASE_detect   20170418.o
+    0x00001c54   0x00000048   Code   RO           66    i.Init_Devices      20170418.o
+    0x00001c9c   0x0000013c   Code   RO           67    i.Initial_lcd       20170418.o
+    0x00001dd8   0x00000040   Code   RO           68    i.LCD_Port_Init     20170418.o
+    0x00001e18   0x00000014   Code   RO         1665    i.NVIC_EnableIRQ    drvtimer.o
+    0x00001e2c   0x00000078   Code   RO         1666    i.NVIC_SetPriority  drvtimer.o
+    0x00001ea4   0x00000028   Code   RO         1370    i.PWRWU_IRQHandler  drvsys.o
+    0x00001ecc   0x00000020   Code   RO           69    i.Port_Init         20170418.o
+    0x00001eec   0x00000060   Code   RO         1059    i.SPI0_IRQHandler   drvspi.o
+    0x00001f4c   0x00000060   Code   RO         1060    i.SPI1_IRQHandler   drvspi.o
+    0x00001fac   0x00000060   Code   RO         1061    i.SPI2_IRQHandler   drvspi.o
+    0x0000200c   0x00000060   Code   RO         1062    i.SPI3_IRQHandler   drvspi.o
+    0x0000206c   0x00000064   Code   RO           70    i.SingleEndInput_ScanOpModeChannelSelect  20170418.o
+    0x000020d0   0x00000024   Code   RO           71    i.SysTimerDelay     20170418.o
+    0x000020f4   0x000000a0   Code   RO           24    i.SystemCoreClockUpdate  system_nuc1xx.o
+    0x00002194   0x00000002   Code   RO           25    i.SystemInit        system_nuc1xx.o
+    0x00002196   0x00000002   PAD
+    0x00002198   0x00000094   Code   RO         1667    i.TMR0_IRQHandler   drvtimer.o
+    0x0000222c   0x00000094   Code   RO         1668    i.TMR1_IRQHandler   drvtimer.o
+    0x000022c0   0x00000094   Code   RO         1669    i.TMR2_IRQHandler   drvtimer.o
+    0x00002354   0x00000094   Code   RO         1670    i.TMR3_IRQHandler   drvtimer.o
+    0x000023e8   0x0000004c   Code   RO           72    i.Timer0_Callback   20170418.o
+    0x00002434   0x00000024   Code   RO           73    i.Timer0_Init       20170418.o
+    0x00002458   0x00000048   Code   RO           74    i.UP_detect         20170418.o
+    0x000024a0   0x00000034   Code   RO         1671    i.WDT_IRQHandler    drvtimer.o
+    0x000024d4   0x0000001c   Code   RO          486    i.__ARM_common_switch8  20170418.o
+    0x000024f0   0x0000007c   Code   RO           75    i.ad9850_Port_Init  20170418.o
+    0x0000256c   0x00000044   Code   RO           76    i.ad9850_reset      20170418.o
+    0x000025b0   0x000000c6   Code   RO           77    i.ad9850_wr_parrel  20170418.o
+    0x00002676   0x0000002a   Code   RO           78    i.atoifreq          20170418.o
+    0x000026a0   0x00000036   Code   RO           79    i.button_Port_Init  20170418.o
+    0x000026d6   0x00000034   Code   RO           80    i.clear_screen      20170418.o
+    0x0000270a   0x00000002   PAD
+    0x0000270c   0x00000110   Code   RO           82    i.display_GB2312_string  20170418.o
+    0x0000281c   0x00000054   Code   RO           86    i.display_ui_act    20170418.o
+    0x00002870   0x00000086   Code   RO           87    i.get_and_write_16x16  20170418.o
+    0x000028f6   0x00000086   Code   RO           88    i.get_and_write_8x16  20170418.o
+    0x0000297c   0x00000044   Code   RO           89    i.get_data_from_ROM  20170418.o
+    0x000029c0   0x0000002a   Code   RO           90    i.in_de             20170418.o
+    0x000029ea   0x00000002   PAD
+    0x000029ec   0x0000009c   Code   RO           91    i.in_de_degree      20170418.o
+    0x00002a88   0x0000002a   Code   RO           92    i.in_de_f           20170418.o
+    0x00002ab2   0x00000002   PAD
+    0x00002ab4   0x00000600   Code   RO           93    i.init_act          20170418.o
+    0x000030b4   0x00000052   Code   RO           95    i.itoafreq          20170418.o
+    0x00003106   0x00000002   PAD
+    0x00003108   0x00000074   Code   RO           96    i.itodegree         20170418.o
+    0x0000317c   0x00000028   Code   RO           97    i.lcd_address       20170418.o
+    0x000031a4   0x000001a0   Code   RO           98    i.main              20170418.o
+    0x00003344   0x0000004a   Code   RO           99    i.send_command_to_ROM  20170418.o
+    0x0000338e   0x00000002   PAD
+    0x00003390   0x00000254   Code   RO          100    i.setup_AD9850      20170418.o
+    0x000035e4   0x0000005c   Code   RO          101    i.transfer_command_lcd  20170418.o
+    0x00003640   0x00000060   Code   RO          102    i.transfer_data_lcd  20170418.o
+    0x000036a0   0x00000074   Code   RO          103    i.ui_proc0          20170418.o
+    0x00003714   0x00000180   Code   RO          104    i.ui_proc101        20170418.o
+    0x00003894   0x000001ac   Code   RO          105    i.ui_proc102        20170418.o
+    0x00003a40   0x000002f0   Code   RO          106    i.ui_proc103        20170418.o
+    0x00003d30   0x00000180   Code   RO          107    i.ui_proc201        20170418.o
+    0x00003eb0   0x0000022c   Code   RO          108    i.ui_proc203        20170418.o
+    0x000040dc   0x00000234   Code   RO          109    i.ui_proc204        20170418.o
+    0x00004310   0x00000224   Code   RO          110    i.ui_proc205        20170418.o
+    0x00004534   0x00000104   Code   RO          111    i.ui_proc206        20170418.o
+    0x00004638   0x000001a0   Code   RO          112    i.ui_proc207        20170418.o
+    0x000047d8   0x0000022c   Code   RO          113    i.ui_proc208        20170418.o
+    0x00004a04   0x00000234   Code   RO          114    i.ui_proc209        20170418.o
+    0x00004c38   0x00000224   Code   RO          115    i.ui_proc210        20170418.o
+    0x00004e5c   0x000001ec   Code   RO          116    i.ui_proc404        20170418.o
+    0x00005048   0x000001b4   Code   RO          117    i.ui_proc405        20170418.o
+    0x000051fc   0x00000234   Code   RO          118    i.ui_proc406        20170418.o
+    0x00005430   0x0000023c   Code   RO          119    i.ui_proc407        20170418.o
+    0x0000566c   0x0000022c   Code   RO          120    i.ui_proc408        20170418.o
+    0x00005898   0x00000240   Code   RO          121    i.ui_proc409        20170418.o
+    0x00005ad8   0x00000090   Code   RO          122    i.ui_proc505        20170418.o
+    0x00005b68   0x00000188   Code   RO          123    i.ui_proc701        20170418.o
+    0x00005cf0   0x0000023c   Code   RO          124    i.ui_proc703        20170418.o
+    0x00005f2c   0x00000240   Code   RO          125    i.ui_proc704        20170418.o
+    0x0000616c   0x00000230   Code   RO          126    i.ui_proc705        20170418.o
+    0x0000639c   0x000000ec   Code   RO          127    i.ui_proc706        20170418.o
+    0x00006488   0x000001a8   Code   RO          128    i.ui_proc707        20170418.o
+    0x00006630   0x00000124   Code   RO          129    i.ui_state_proc     20170418.o
+    0x00006754   0x00000010   Data   RO         1371    .constdata          drvsys.o
+    0x00006764   0x00000010   Data   RO         1673    .constdata          drvtimer.o
+    0x00006774   0x00000020   Data   RO         2086    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000bd8, Max: 0x00004000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000001c   Data   RW           26    .data               system_nuc1xx.o
+    0x2000001c   0x0000028c   Data   RW          131    .data               20170418.o
+    0x200002a8   0x0000000c   Data   RW          574    .data               drvadc.o
+    0x200002b4   0x00000010   Data   RW          812    .data               drvgpio.o
+    0x200002c4   0x00000008   Data   RW         1372    .data               drvsys.o
+    0x200002cc   0x00000068   Data   RW         1674    .data               drvtimer.o
+    0x20000334   0x00000394   Zero   RW          130    .bss                20170418.o
+    0x200006c8   0x0000000c   Zero   RW          573    .bss                drvadc.o
+    0x200006d4   0x00000050   Zero   RW         1063    .bss                drvspi.o
+    0x20000724   0x00000050   Zero   RW         1672    .bss                drvtimer.o
+    0x20000774   0x00000060   Zero   RW         1962    .bss                c_p.l(libspace.o)
+    0x200007d4   0x00000004   PAD
+    0x200007d8   0x00000000   Zero   RW            2    HEAP                startup_nuc1xx.o
+    0x200007d8   0x00000400   Zero   RW            1    STACK               startup_nuc1xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+     18710       1736          0        652        916     172488   20170418.o
+         0          0          0          0          0       4260   core_cm0.o
+       664         68          0         12         12      15248   drvadc.o
+      2404        160          0         16          0      12497   drvgpio.o
+       384         32          0          0         80       4772   drvspi.o
+       676         86         16          8          0       8113   drvsys.o
+      2526        286         16        104         80      13012   drvtimer.o
+       100         46        192          0       1024        656   startup_nuc1xx.o
+       162         30          0         28          0     119318   system_nuc1xx.o
+
+    ----------------------------------------------------------------------
+     25640       2444        256        820       2112     350364   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        14          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+        60          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+       346          0          0          0          0         92   aeabi_sdiv.o
+        12          0          0          0          0         64   exit.o
+         6          0          0          0          0        136   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         6          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+         0          0          0          0          0          0   rtentry.o
+        12          0          0          0          0          0   rtentry2.o
+         6          0          0          0          0          0   rtentry4.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         60   sys_exit.o
+        62          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       620         16          0          0        100        636   Library Totals
+         8          0          0          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       612         16          0          0         96        636   c_p.l
+
+    ----------------------------------------------------------------------
+       620         16          0          0        100        636   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     26260       2460        256        820       2212     345812   Grand Totals
+     26260       2460        256        820       2212     345812   ELF Image Totals
+     26260       2460        256        820          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                26516 (  25.89kB)
+    Total RW  Size (RW Data + ZI Data)              3032 (   2.96kB)
+    Total ROM Size (Code + RO Data + RW Data)      27336 (  26.70kB)
+
+==============================================================================
+
